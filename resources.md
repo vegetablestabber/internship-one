@@ -9,14 +9,16 @@
 
 ## Tutorials
 
-- [12 open source tools for natural language processing](https://opensource.com/article/19/3/natural-language-processing-tools)
 - [What is Retrieval-Augmented Generation (RAG)? ](https://www.youtube.com/watch?v=T-D1OfcDW1M)
-- [LocalGPT LLM Implementation Using Ollama and Streamlit Tutorial](https://www.youtube.com/watch?v=rZtXDo8WjSY)
-- [Deploy LLaMA 2 with a Streamlit front-end in under 15 minutes (including CPU vs GPU benchmark)](https://www.youtube.com/watch?v=4kYY7I8y_fA)
-- [LocalGPT: OFFLINE CHAT FOR YOUR FILES [Installation & Code Walkthrough]](https://www.youtube.com/watch?v=MlyoObdIHyo)
 - [A beginner's guide to building a Retrieval Augmented Generation (RAG) application from scratch](https://learnbybuilding.ai/tutorials/rag-from-scratch)
 - [](https://www.youtube.com/watch?v=WZilmUNVm2U)
 
 ## Textbooks
 
 - [Practical Natural Language Processing](https://www.oreilly.com/library/view/practical-natural-language/9781492054047/)
+
+## Miscellaneous
+
+- [12 open source tools for natural language processing](https://opensource.com/article/19/3/natural-language-processing-tools)
+- https://huggingface.co/learn/cookbook/en/rag_zephyr_langchain
+- [Deploy LLaMA 2 with a Streamlit front-end in under 15 minutes (including CPU vs GPU benchmark)](https://www.youtube.com/watch?v=4kYY7I8y_fA)

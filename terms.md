@@ -22,8 +22,6 @@
 
 &mdash; *[symbl.ai](https://symbl.ai/developers/blog/a-guide-to-llm-inference-performance-monitoring/)*
 
-### Ollama
-
 ### Retrival augmented system (RAG)
 
 ## Industrial symbiosis

@@ -3,6 +3,7 @@
 - Python
 - Pandas
 - Git
+- GitHub
 - Natural language processing
 - spaCy
 - PowerPoint
@@ -23,3 +24,10 @@
 
 - Looked into building a RAG
 - Looked at the MAESTRI dataset
+
+Thoughts: 
+- Formulate a industry classification table and a resource classification table
+    - Use Transformers?
+- Manual preprocessing vs. preprocessing using a LLM
+- Build a knowledge graph for MAESTRI dataset
+    - Use Neo4j?

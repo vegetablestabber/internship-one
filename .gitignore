@@ -1,4 +1,5 @@
 .ipynb_checkpoints/
+.env
 Chuan Fu/
 data/exports/
 data/*copy*.xlsx
