@@ -30,4 +30,9 @@ Thoughts:
     - Use Transformers?
 - Manual preprocessing vs. preprocessing using a LLM
 - Build a knowledge graph for MAESTRI dataset
-    - Use Neo4j?
+    - Use Neo4j
+
+# Week 3
+
+- Worked on validation
+- 27 May: Similarity score algorithm is by no means accurate, but Chuan Fu stated that a rough estimation would be sufficient.
