@@ -36,3 +36,5 @@ Thoughts:
 
 - Worked on validation
 - 27 May: Similarity score algorithm is by no means accurate, but Chuan Fu stated that a rough estimation would be sufficient.
+- 30 May: Chuan Fu requires an overall metric for the model
+- 31 May: Added stacked bar graphs to visualise the accuracy of the model
