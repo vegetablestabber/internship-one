@@ -1,0 +1,1385 @@
+Code,Level,Description,ISIC code
+01111,5,Growing of leafy and fruit vegetables,113
+01112,5,Growing of mushrooms,113
+01113,5,Growing of root crops,113
+01119,5,Growing of food crops (non-hydroponics) n.e.c.,111
+01119,5,Growing of food crops (non-hydroponics) n.e.c.,112
+01120,5,Growing of leafy and fruit vegetables (hydroponics),113
+01130,5,Growing of fruits,121
+01130,5,Growing of fruits,122
+01130,5,Growing of fruits,123
+01130,5,Growing of fruits,124
+01130,5,Growing of fruits,125
+01141,5,Growing of orchids,130
+01142,5,Growing of ornamental plants,130
+01149,5,Growing of nursery products n.e.c.,130
+01190,5,Growing of other crops,114
+01190,5,Growing of other crops,115
+01190,5,Growing of other crops,116
+01190,5,Growing of other crops,119
+01190,5,Growing of other crops,126
+01190,5,Growing of other crops,127
+01190,5,Growing of other crops,128
+01190,5,Growing of other crops,129
+01411,5,Pig farms,145
+01412,5,Cattle farms (including dairy cattle),141
+01413,5,Goat farms (including goat's milk production),144
+01421,5,Poultry breeding/hatcheries,146
+01422,5,Broiler farms (chickens reared for meat),146
+01423,5,Layer farms (chickens reared for eggs),146
+01424,5,Duck farms,146
+01491,5,Dog breeding,149
+01492,5,Bird breeding,149
+01493,5,Crocodile farms,321
+01494,5,Frog farms,322
+01499,5,Other animal production n.e.c.,142
+01499,5,Other animal production n.e.c.,143
+01499,5,Other animal production n.e.c.,149
+01500,5,Growing of crops combined with animal production (mixed farming),150
+01600,5,Agricultural and animal husbandry service activities except veterinary activities,161
+01600,5,Agricultural and animal husbandry service activities except veterinary activities,162
+01600,5,Agricultural and animal husbandry service activities except veterinary activities,163
+01600,5,Agricultural and animal husbandry service activities except veterinary activities,164
+02000,5,"Forestry, logging and related service activities",210
+02000,5,"Forestry, logging and related service activities",220
+02000,5,"Forestry, logging and related service activities",230
+02000,5,"Forestry, logging and related service activities",240
+03101,5,Fishing in kelongs,311
+03101,5,Fishing in kelongs,312
+03102,5,Ocean fishing except fishing in kelongs,311
+03103,5,Coastal fishing except fishing in kelongs,311
+03103,5,Coastal fishing except fishing in kelongs,312
+03109,5,Fishing n.e.c.,311
+03109,5,Fishing n.e.c.,312
+03201,5,Food fish farms,321
+03201,5,Food fish farms,322
+03202,5,Ornamental fish farms,321
+03202,5,Ornamental fish farms,322
+03209,5,"Operation of fish hatcheries and fish farms n.e.c. (including turtle, prawn, crab, mussel farms)",321
+03209,5,"Operation of fish hatcheries and fish farms n.e.c. (including turtle, prawn, crab, mussel farms)",322
+08101,5,Stone quarrying,810
+08102,5,Quarrying of sand and clay,810
+08900,5,Other mining and quarrying,510
+08900,5,Other mining and quarrying,520
+08900,5,Other mining and quarrying,710
+08900,5,Other mining and quarrying,721
+08900,5,Other mining and quarrying,729
+08900,5,Other mining and quarrying,891
+08900,5,Other mining and quarrying,892
+08900,5,Other mining and quarrying,893
+08900,5,Other mining and quarrying,899
+09001,5,Crude petroleum and natural gas production,610
+09001,5,Crude petroleum and natural gas production,620
+09002,5,"Service activities incidental to oil and gas extraction (excluding surveying and engineering design and consultancy services supporting mining, oil and gas extraction and offshore exploration activities)",910
+09002,5,"Service activities incidental to oil and gas extraction (excluding surveying and engineering design and consultancy services supporting mining, oil and gas extraction and offshore exploration activities)",990
+10101,5,Slaughtering of livestock and poultry,1010
+10102,5,Manufacture of sausage,1010
+10103,5,"Preparing, canning and preserving of livestock and livestock products (including lard and other edible animal fats)",1010
+10104,5,"Preparing, canning and preserving of poultry and poultry products",1010
+10109,5,Processing and preserving of meat and meat products n.e.c.,1010
+10200,5,Processing and preserving of seafood,1020
+10301,5,Manufacture of jams (including fruit jelly),1030
+10302,5,Other canning and preserving of fruits and fruit juices,1030
+10303,5,Other canning and preserving of vegetables and vegetable juices (including pickles),1030
+10401,5,Manufacture of edible vegetable and animal oils and fats,1040
+10402,5,Manufacture of inedible vegetable and animal oils and fats,1040
+10409,5,Manufacture of vegetable and animal oils and fats n.e.c.,1040
+10501,5,Manufacture of condensed and evaporated milk (including pasteurising and bottling of fluid milk),1050
+10502,5,Manufacture of milk powder,1050
+10503,5,Manufacture of ice-cream,1050
+10509,5,"Manufacture of dairy products n.e.c. (e.g. butter, cheese, ice-cream mixes and powder, yoghurt)",1050
+10611,5,Rice milling,1061
+10612,5,Wheat milling,1061
+10613,5,Provision of milling services,1061
+10619,5,Manufacture of grain mill products n.e.c.,1061
+10620,5,Manufacture of starches and starch products,1062
+10711,5,Manufacture of biscuits (including wafers and cones),1071
+10712,5,"Manufacture of bread, cakes and confectionery (excluding frozen bakery products)",1071
+10719,5,Manufacture of bakery products n.e.c.,1071
+10720,5,Manufacture of sugar and sugar products,1072
+10731,5,Manufacture of cocoa and chocolate powder from beans,1073
+10732,5,Manufacture of chocolate and chocolate products,1073
+10733,5,"Manufacture of non-chocolate confectionery (e.g. sweets, toffees, crystallised fruits, chewing gums)",1073
+10740,5,"Manufacture of macaroni, noodles, vermicelli and other related products",1074
+10750,5,Manufacture of cooked-food preparations (e.g. frozen dinners),1075
+10761,5,Manufacture of instant beverages,1079
+10762,5,Processing of coffee seeds,1079
+10763,5,Manufacture of coffee powder,1079
+10764,5,Manufacture of tea (including processing of tea leaves),1079
+10765,5,Manufacture of non-dairy creamer,1079
+10791,5,"Manufacture of sauces including soya bean sauce (e.g. tomato sauce, chilli sauce)",1079
+10792,5,Manufacture of soya bean products except soya bean sauce and soya bean milk,1079
+10793,5,Manufacture and processing of spices (including curry powder and spice extracts),1079
+10794,5,"Manufacture of chips, crackers and other titbits (excluding biscuits and confectionery)",1079
+10799,5,Manufacture of other food products n.e.c. (except food chemicals and additives),1079
+10800,5,Manufacture of prepared animal feeds (including additives for animal feed),1080
+11010,5,"Distilling, rectifying and blending of spirits; ethyl alcohol production from fermented materials (including samsu and Chinese liquors)",1101
+11020,5,Manufacture of wines,1102
+11030,5,Manufacture of malt liquors and malt (e.g. beer and stout),1103
+11041,5,"Manufacture of soft drinks, production of mineral waters (including carbonated waters, soya bean milk, barley water, chrysanthemum water)",1104
+11042,5,"Manufacture of cordials, syrups and composite concentrates for beverages",1104
+11043,5,Manufacture of ice except dry ice,1104
+12001,5,Manufacture of cigarettes,1200
+12009,5,"Manufacture of tobacco products n.e.c. (e.g. cigars, loose tobacco)",1200
+13100,5,"Spinning, weaving and finishing of textiles",1311
+13100,5,"Spinning, weaving and finishing of textiles",1312
+13100,5,"Spinning, weaving and finishing of textiles",1313
+13910,5,Manufacture of knitted and crocheted fabrics and laces,1391
+13921,5,"Manufacture of curtains, pillow cases, bed sheets and bed spreads",1392
+13922,5,"Manufacture of other made-up house furnishings (e.g. napkins, table cloths)",1392
+13929,5,"Manufacture of made-up textile articles except apparel n.e.c. (e.g. scrolls, flags and sails, banners, canvas products, cushions, pillows)",1392
+13930,5,Manufacture of carpets and rugs,1393
+13940,5,"Manufacture of cordage, rope, twine and netting",1394
+13990,5,Manufacture of other textiles n.e.c. (e.g. upholstery filling),1399
+14101,5,Manufacture of outer garments,1410
+14102,5,Manufacture of brassieres and other undergarments,1410
+14103,5,Tailoring and dressmaking (to individual order),1410
+14109,5,"Manufacture of wearing apparel except fur apparel n.e.c. (e.g. songkoks, caps, gloves and mittens, garters, handkerchiefs, raincoats, shawls and hair nets)",1410
+14200,5,"Manufacture of fur apparel and articles of fur (e.g. fur rugs, mats and cushions)",1420
+14301,5,"Manufacture of socks, stockings and other hosiery",1430
+14302,5,"Manufacture of briefs, singlets and other knitted or crocheted wear (e.g. pullovers, cardigans)",1430
+14309,5,Manufacture of knitted and crocheted apparel n.e.c.,1430
+15110,5,Tanning and dressing of leather; dressing and dyeing of fur,1511
+15121,5,"Manufacture of luggage, bags, brief cases and the like",1512
+15122,5,Manufacture of handbags,1512
+15129,5,"Manufacture of saddlery, harness and articles of leather n.e.c. (e.g. coin purses, key cases)",1512
+15200,5,Manufacture of footwear,1520
+16101,5,Sawmilling,1610
+16102,5,Preservation of wood,1610
+16109,5,Sawmilling and planing of wood n.e.c.,1610
+16211,5,Manufacture of plywood and veneer,1621
+16219,5,"Manufacture of laminboard, particle board and other panels and boards n.e.c.",1621
+16291,5,"Manufacture of wooden window, door and other millwork, except prefabricated wooden building structures",1622
+16292,5,Manufacture of household and kitchen wooden ware except wooden footwear,1629
+16293,5,Manufacture of wooden containers,1623
+16294,5,Manufacture of attap and attap products,1629
+16295,5,Rattan processing,1629
+16299,5,"Manufacture of other products of wood and articles of cork, straw and plaiting materials n.e.c.",1629
+17010,5,"Manufacture of pulp, paper and paperboard",1701
+17021,5,Manufacture of corrugated paper and paperboard,1702
+17022,5,Manufacture of containers and boxes of paper and paperboard,1702
+17091,5,Manufacture of joss paper and other related ceremonial paper products (including effigies and other funeral paper goods and Chinese lanterns),1709
+17092,5,"Manufacture of sanitary towels, toilet paper, paper towels, disposable diapers and related paper products",1709
+17093,5,"Manufacture of paper cups, plates and utensils",1709
+17094,5,"Manufacture of cards, envelopes and stationery, unprinted",1709
+17099,5,"Manufacture of other articles of paper and paperboard n.e.c. (e.g. papier mache, wallpaper)",1709
+18111,5,Printing of newspapers,1811
+18112,5,"Printing of periodicals, books and magazines",1811
+18113,5,"Commercial printing (e.g. printing of brochures, cards, envelopes, labels and stationery)",1811
+18114,5,Printing of continuous and fan-fold forms,1811
+18115,5,Silk screen printing (including metal printing),1811
+18119,5,Printing n.e.c.,1811
+18121,5,Bookbinding (e.g. book packaging),1812
+18122,5,Colour separation,1812
+18129,5,Service activities related to printing n.e.c. (including plate-making),1812
+18200,5,"Reproduction of recorded media (including reproduction of phonograph records, recorded magnetic tapes, compact discs and non-customised software)",1820
+19100,5,Manufacture of coke oven products,1910
+19201,5,Petroleum refineries,1920
+19202,5,Manufacture of petroleum lubricating oil,1920
+19209,5,Manufacture of refined petroleum products n.e.c.,1920
+20111,5,Manufacture of industrial gases and dry ice,2011
+20112,5,Manufacture of basic industrial acids and alkalis,2011
+20113,5,Manufacture of basic chemicals except fertilisers and nitrogen,2011
+20114,5,Manufacture of solvents,2011
+20119,5,Manufacture of basic chemicals n.e.c.,2011
+20120,5,Manufacture of fertilisers and nitrogen compounds,2012
+20131,5,"Manufacture of petrochemical primary products (e.g. olefins, aromatics, basic building blocks)",2013
+20132,5,"Manufacture of derivatives and intermediates produced from basic building blocks (e.g. acetyls, acrylics, oxochemicals, styrene, phenolic, ethylene oxide derivatives and polymers)",2013
+20133,5,Manufacture of synthetic rubber,2013
+20210,5,"Manufacture of pesticides and other agro-chemical products (including insecticides, herbicides and disinfectants)",2021
+20221,5,Manufacture of paints,2022
+20222,5,Manufacture of varnishes and lacquers (including enamels),2022
+20229,5,"Manufacture of paints, varnishes and similar coatings and mastics n.e.c.",2022
+20231,5,"Manufacture of soap, detergents, washing and other cleaning preparations",2023
+20232,5,Manufacture of perfumes and fragrances,2023
+20233,5,Manufacture of cosmetics and toiletries,2023
+20234,5,Manufacture of waxes and polishes and deodorising preparations,2023
+20241,5,"Manufacture of food chemicals and additives (e.g. flavours, preservatives and colourings)",2029
+20242,5,Manufacture of additives for mineral oil (e.g. lubricant and fuel additives),2029
+20249,5,Manufacture of additives n.e.c.,2029
+20291,5,Manufacture of epoxy moulding compounds and phenolic moulding compounds,2029
+20292,5,"Manufacture of ultrapure electronic chemicals, materials and laminates",2029
+20293,5,"Manufacture of water treatment, waste treatment and oilfield chemicals",2029
+20294,5,"Manufacture of inks, dyestuffs, pigments and carbon black",2029
+20295,5,"Manufacture of photographic film, paper, plate and chemicals",2029
+20296,5,Manufacture of adhesives and sealants,2029
+20297,5,Manufacture of catalysts and catalyst regeneration,2029
+20298,5,Manufacture of biofuels,2029
+20299,5,"Manufacture of other chemical products n.e.c. (e.g. gelatin and derivatives, laundry blue, explosives, processed salts, industrial starch, incense and joss sticks, camphor products)",2029
+20300,5,Manufacture of man-made fibres except glass,2030
+21011,5,Manufacture of pharmaceutical intermediates and fine chemicals for human use,2100
+21012,5,Manufacture of pharmaceutical products and preparations for human use (e.g. tableted products),2100
+21013,5,Manufacture of pharmaceutical products for veterinary use,2100
+21021,5,Manufacture of vaccines for human use,2100
+21022,5,Manufacture of other biological products and preparations for human use,2100
+21023,5,Manufacture of biological products and preparations for veterinary use,2100
+21030,5,Manufacture of Traditional Chinese Medicine,2100
+22111,5,Processing of rubber (including processing of rubber latex),2219
+22112,5,Grading and packing of rubber,2219
+22119,5,"Processing of natural gums n.e.c. (e.g. gum damar, jelutong)",2219
+22121,5,Manufacture of tyres and tubes,2211
+22122,5,Retreading and vulcanising of tyres,2211
+22191,5,Manufacture of foam rubber products (excluding foam rubber mattresses),2219
+22192,5,Manufacture of rubber automotive parts,2219
+22193,5,Manufacture of industrial and mechanical rubber goods,2219
+22194,5,Manufacture of rubber floorings,2219
+22199,5,Manufacture of other rubber products n.e.c. (except rubber footwear and toys),2219
+22211,5,"Manufacture of plastic tableware, household and kitchen ware (excluding disposable utensils)",2220
+22212,5,Manufacture of styrofoam and plastic disposable utensils,2220
+22213,5,"Manufacture of plastic sheet, film and articles thereof (e.g. polythene and polypropylene bags)",2220
+22214,5,"Manufacture of plastic bottles, boxes and containers (except for household use)",2220
+22215,5,Manufacture of plastic pipes and tubes,2220
+22216,5,Manufacture of plastic precision engineering parts,2220
+22217,5,"Manufacture of PVC files, holders and albums",2220
+22218,5,Manufacture of plastic cable ties,2220
+22219,5,Manufacture of plastic products n.e.c. (except plastic footwear and toys),2220
+22220,5,Plastic product services,2220
+23100,5,Manufacture of glass and glass products (including yarn of glass fibres),2310
+23911,5,Manufacture of bricks,2391
+23912,5,"Manufacture of tiles, pipes and channels (including clay roofing, wall and floor tiles, and earthen and glazed pipes)",2391
+23912,5,"Manufacture of tiles, pipes and channels (including clay roofing, wall and floor tiles, and earthen and glazed pipes)",2392
+23919,5,Manufacture of clay products n.e.c.,2391
+23919,5,Manufacture of clay products n.e.c.,2392
+23931,5,"Manufacture of plumbing fixtures and fittings of vitreous china, china and earthenware (e.g. sinks, closets, bowls)",2393
+23939,5,Manufacture of other porcelain and ceramic products n.e.c.,2393
+23940,5,"Manufacture of cement, lime and plaster",2394
+23951,5,Manufacture of ready-mix concrete,2395
+23959,5,"Manufacture of articles of concrete, cement and plaster n.e.c. (except precast concrete components)",2395
+23960,5,"Cutting, shaping and finishing of stone (including tomb-stones and furniture of stone or marble)",2396
+23991,5,Manufacture of asbestos products except asbestos paper,2399
+23992,5,Manufacture of fibreglass and fibreglass products,2399
+23993,5,"Manufacture of other insulation products (e.g. ceramic IC packages, refractory materials, rock wool products, insulation services)",2399
+23994,5,"Manufacture of non-structural pre-cast components (e.g. lightweight partitions, secondary roof slabs)",2399
+23995,5,Manufacture of asphalt premix,2399
+23999,5,Manufacture of other non-metallic mineral products n.e.c. (e.g. graphite products),2399
+24101,5,Iron and steel rolling mills,2410
+24102,5,Manufacture of ferrous metal alloys,2410
+24109,5,Manufacture of basic iron and steel n.e.c. (including smelting),2410
+24201,5,Tin smelting,2420
+24202,5,Manufacture of non-ferrous metal alloys,2420
+24209,5,Manufacture of basic precious and non-ferrous metals n.e.c.,2420
+24310,5,Iron and steel foundries,2431
+24310,5,Iron and steel foundries,2591
+24320,5,Non-ferrous metal foundries,2432
+24320,5,Non-ferrous metal foundries,2591
+25111,5,"Manufacture of metal doors, window and door frames, grilles and gratings",2511
+25112,5,Manufacture of metal strips and slabs (e.g. awnings),2511
+25113,5,Manufacture of metal pipes and tubes,2511
+25113,5,Manufacture of metal pipes and tubes,3311
+25114,5,Manufacture of steel structural component,2511
+25119,5,"Manufacture of structural metal products n.e.c. (e.g. metal sections, corrugated sheets)",2511
+25120,5,"Manufacture and repair of tanks, reservoirs and containers of metal (e.g. metal cylinders, storage vessels and containers for compressed or liquefied gas)",2512
+25120,5,"Manufacture and repair of tanks, reservoirs and containers of metal (e.g. metal cylinders, storage vessels and containers for compressed or liquefied gas)",3311
+25131,5,"Manufacture and repair of heating boilers, radiators and correctors (including parts)",2513
+25131,5,"Manufacture and repair of heating boilers, radiators and correctors (including parts)",3311
+25139,5,Manufacture and repair of steam generators n.e.c. (except central heating hot water boilers),2513
+25139,5,Manufacture and repair of steam generators n.e.c. (except central heating hot water boilers),3311
+25200,5,Manufacture and repair of weapons and ammunition (e.g. ordnance and accessories),2520
+25200,5,Manufacture and repair of weapons and ammunition (e.g. ordnance and accessories),3311
+25911,5,Iron and steel and non-ferrous forgings,2591
+25912,5,Manufacture of metal caps (e.g. crown corks),2591
+25913,5,Manufacture of leadframe,2591
+25914,5,Metal stampings except metal caps,2591
+25919,5,Pressing and roll-forming of metal and powder metallurgy n.e.c.,2591
+25921,5,Electroplating and plating of metals and formed products,2592
+25922,5,Polishing of metals and formed products,2592
+25923,5,Rustproofing of metals and formed products,2592
+25924,5,Heat treatment for metals,2592
+25929,5,Metal product services n.e.c.,2592
+25931,5,"Manufacture of table, kitchen and other cutlery",2593
+25932,5,Manufacture of hand and edge tools,2593
+25939,5,"Manufacture of general hardware (including blacksmith shops) n.e.c. (e.g. locks and keys, hinges, clamps, hooks)",2593
+25941,5,"Manufacture of uninsulated wire (e.g. electronic component wire, bonding wire)",2599
+25949,5,Manufacture of metal wire and cable products n.e.c.,2599
+25951,5,Manufacture of tinplate cans,2599
+25952,5,"Manufacture of other tinplate and zinc articles (e.g. pails, buckets, dustbins)",2599
+25959,5,"Manufacture of metal cans, containers and related products n.e.c. (e.g. barrels, steel drums, kegs)",2599
+25991,5,Manufacture of sanitary ware of enamelled iron and metal and plumbers' ware of brass,2599
+25992,5,"Manufacture of plumbing, heating and related products (including parts) except electric",2599
+25993,5,"Manufacture of bolts, nuts, rivets, fasteners and screw machine products",2599
+25994,5,Manufacture of pipe fittings,2599
+25995,5,Manufacture of springs,2599
+25996,5,"Manufacture of kitchen and household utensils (e.g. steel shelf, showcase counters, kitchen trolleys display racks, sink bowls and other customised kitchen equipment)",2599
+25997,5,Manufacture of metal precision components,2599
+25998,5,"Slitting, shearing and pasting of metal sheeting",2599
+25999,5,Manufacture of other fabricated metal products n.e.c. (including voice coil magnets),2599
+25999,5,Manufacture of other fabricated metal products n.e.c. (including voice coil magnets),3311
+26111,5,"Manufacture of discrete devices (e.g. diodes, light-emitting diodes, transistors and rectifiers)",2610
+26112,5,Semiconductor wafer fabrication,2610
+26113,5,Assembly and testing of semiconductors,2610
+26114,5,Manufacture of solar wafers,2610
+26115,5,Manufacture of solar cells,2610
+26119,5,Manufacture of semiconductor devices n.e.c.,2610
+26121,5,Manufacture of capacitors,2610
+26122,5,Manufacture of printed circuit boards without electronic parts,2610
+26123,5,Manufacture of printed circuit boards with electronic parts,2610
+26124,5,"Manufacture of piezo-electric devices (e.g. quartz crystals, quartz crystal filters, delay lines)",2610
+26125,5,Manufacture of electronic display devices except light emitting diodes,2610
+26126,5,Manufacture of electronic connectors,2610
+26129,5,Manufacture of other electronic components and boards n.e.c.,2610
+26201,5,Manufacture of computers and data processing equipment except computer peripheral equipment,2620
+26202,5,"Manufacture of disk drives (including CD-ROM drives, DVD-ROM drives, optical drives, flash drives, tape drives, solid state drives, storage subsystems)",2620
+26203,5,Manufacture of printers,2620
+26204,5,Manufacture of smart cards and related products (e.g. smart card readers),2620
+26209,5,Manufacture of computers and peripheral equipment n.e.c.,2620
+26301,5,"Manufacture of telecommunications apparatus (e.g. PBX equipment, telephones except cellular)",2630
+26302,5,"Manufacture of networking products (e.g. routers, switches)",2630
+26303,5,Manufacture of wireless communications equipment (e.g. cellular phones),2630
+26304,5,"Manufacture of electronic security systems (including electronic sensors, burglar and fire alarm systems)",2630
+26309,5,Manufacture of communications equipment n.e.c.,2630
+26400,5,Manufacture of consumer electronics,2640
+26511,5,Manufacture and repair of engineering and scientific instruments,2651
+26511,5,Manufacture and repair of engineering and scientific instruments,3313
+26512,5,Manufacture and repair of measuring devices (e.g. meters),2651
+26512,5,Manufacture and repair of measuring devices (e.g. meters),3313
+26513,5,Manufacture and repair of process control equipment and related products,2651
+26513,5,Manufacture and repair of process control equipment and related products,3313
+26521,5,Manufacture of fully electronic watches and clocks,2652
+26522,5,Manufacture of electro-mechanical watches and clocks (e.g. watches and clocks with moving parts and battery),2652
+26523,5,Manufacture of mechanical watches and clocks,2652
+26524,5,Manufacture of parts and accessories for watches and clocks,2652
+26601,5,Manufacture and repair of electrotherapeutic devices,2660
+26601,5,Manufacture and repair of electrotherapeutic devices,3313
+26602,5,Manufacture and repair of irradiation and electromedical equipment and instruments,2660
+26602,5,Manufacture and repair of irradiation and electromedical equipment and instruments,3313
+26701,5,Manufacture of photographic equipment and parts (including lenses),2670
+26701,5,Manufacture of photographic equipment and parts (including lenses),3313
+26709,5,Manufacture of optical instruments and photographic equipment n.e.c.,2670
+26709,5,Manufacture of optical instruments and photographic equipment n.e.c.,3313
+26801,5,Manufacture of disk media,2680
+26802,5,"Manufacture of blank magnetic tapes, diskettes, Blu-ray technology discs, CDs, DVDs and VCDs",2680
+27101,5,Manufacture and repair of electric motors,2710
+27101,5,Manufacture and repair of electric motors,3314
+27102,5,Manufacture and repair of electric generators,2710
+27102,5,Manufacture and repair of electric generators,3314
+27103,5,Manufacture and repair of transformers,2710
+27103,5,Manufacture and repair of transformers,3314
+27104,5,"Manufacture and repair of switchgear and switchboard apparatus (including switches, circuit breakers and electrical control panels)",2710
+27104,5,"Manufacture and repair of switchgear and switchboard apparatus (including switches, circuit breakers and electrical control panels)",3314
+27109,5,"Manufacture and repair of electric motors, generators, transformers and electricity distribution and control apparatus n.e.c. (e.g. busbar trunking)",2710
+27109,5,"Manufacture and repair of electric motors, generators, transformers and electricity distribution and control apparatus n.e.c. (e.g. busbar trunking)",3314
+27201,5,Manufacture of primary batteries,2720
+27201,5,Manufacture of primary batteries,3314
+27202,5,Manufacture of secondary batteries,2720
+27202,5,Manufacture of secondary batteries,3314
+27321,5,Manufacture of telecommunications cables and wires,2731
+27321,5,Manufacture of telecommunications cables and wires,2732
+27321,5,Manufacture of telecommunications cables and wires,3314
+27322,5,Manufacture of electric power cables and wires,2732
+27322,5,Manufacture of electric power cables and wires,3314
+27323,5,"Manufacture of enamelled wires (used for winding of motors, transformers etc)",2732
+27323,5,"Manufacture of enamelled wires (used for winding of motors, transformers etc)",3314
+27324,5,Manufacture of wire and cable assemblies and harnesses,2732
+27324,5,Manufacture of wire and cable assemblies and harnesses,3314
+27329,5,Manufacture of other electronic and electric wires and cables n.e.c.,2732
+27329,5,Manufacture of other electronic and electric wires and cables n.e.c.,3314
+27330,5,Manufacture and repair of wiring devices,2733
+27330,5,Manufacture and repair of wiring devices,3314
+27400,5,"Manufacture and repair of electric lamps and lighting equipment (including silver reflectors, fittings and parts)",2740
+27400,5,"Manufacture and repair of electric lamps and lighting equipment (including silver reflectors, fittings and parts)",3314
+27501,5,"Manufacture of electrical household appliances (e.g. refrigerators, hot plates, toasters, food mixers, cookers, hair dryers, fans, shavers)",2750
+27509,5,"Manufacture of domestic appliances n.e.c. (e.g. non-electric cooking ranges, grates, stoves)",2750
+27901,5,Manufacture of fuel cells,2790
+27902,5,"Manufacture of electrical machinery, apparatus, appliances and supplies (including sound or visual signalling apparatus, electrical insulators except porcelain or glass)",2790
+28111,5,"Manufacture and repair of engines and turbines except aircraft, vehicle, cycle and marine engines",2811
+28111,5,"Manufacture and repair of engines and turbines except aircraft, vehicle, cycle and marine engines",3312
+28112,5,Manufacture and repair of marine engine,2811
+28112,5,Manufacture and repair of marine engine,3312
+28121,5,"Manufacture and repair of pumps (e.g. hydraulic pumps, drainage pumps)",2812
+28121,5,"Manufacture and repair of pumps (e.g. hydraulic pumps, drainage pumps)",3312
+28122,5,"Manufacture and repair of taps, cocks and valves",2813
+28122,5,"Manufacture and repair of taps, cocks and valves",3312
+28129,5,"Manufacture and repair of pumps, compressors, taps and valves n.e.c.",2813
+28129,5,"Manufacture and repair of pumps, compressors, taps and valves n.e.c.",3312
+28141,5,Manufacture of bearings (including disc and ball bearings),2814
+28142,5,"Manufacture and repair of gears, gearing and driving elements",2814
+28142,5,"Manufacture and repair of gears, gearing and driving elements",3312
+28150,5,"Manufacture and repair of ovens, furnaces and furnace burners",2815
+28150,5,"Manufacture and repair of ovens, furnaces and furnace burners",3312
+28161,5,Manufacture and repair of lifting and hoisting machinery except electrical,2816
+28161,5,Manufacture and repair of lifting and hoisting machinery except electrical,3312
+28162,5,Manufacture and repair of lifts and escalators,2816
+28162,5,Manufacture and repair of lifts and escalators,3312
+28169,5,Manufacture and repair of lifting and handling equipment n.e.c. (including conveying systems and industrial automated systems),2816
+28169,5,Manufacture and repair of lifting and handling equipment n.e.c. (including conveying systems and industrial automated systems),3312
+28171,5,Manufacture of office machinery and equipment (except computers and peripheral equipment),2817
+28171,5,Manufacture of office machinery and equipment (except computers and peripheral equipment),3312
+28172,5,Repair and maintenance of office machinery and equipment,2817
+28172,5,Repair and maintenance of office machinery and equipment,3312
+28181,5,Manufacture and repair of industrial robots (including Automated Guided Vehicles (AGVs)),2816
+28181,5,Manufacture and repair of industrial robots (including Automated Guided Vehicles (AGVs)),2829
+28181,5,Manufacture and repair of industrial robots (including Automated Guided Vehicles (AGVs)),3312
+28182,5,Manufacture and repair of service robots,2816
+28182,5,Manufacture and repair of service robots,2829
+28182,5,Manufacture and repair of service robots,3312
+28189,5,Manufacture and repair of robots n.e.c.,2816
+28189,5,Manufacture and repair of robots n.e.c.,2829
+28189,5,Manufacture and repair of robots n.e.c.,3312
+28191,5,"Manufacture and repair of refrigerating, air-conditioning and ventilating machinery and equipment except household refrigerators",2819
+28191,5,"Manufacture and repair of refrigerating, air-conditioning and ventilating machinery and equipment except household refrigerators",3312
+28192,5,"Manufacture and repair of separation/mixing equipment (e.g. filters, separators, mixers)",2819
+28192,5,"Manufacture and repair of separation/mixing equipment (e.g. filters, separators, mixers)",3312
+28192,5,"Manufacture and repair of separation/mixing equipment (e.g. filters, separators, mixers)",3319
+28193,5,Manufacture and repair of solar modules and panels,2819
+28193,5,Manufacture and repair of solar modules and panels,3312
+28194,5,Manufacture and repair of welding and soldering equipment (including arc welding electrodes),2819
+28194,5,Manufacture and repair of welding and soldering equipment (including arc welding electrodes),3312
+28194,5,Manufacture and repair of welding and soldering equipment (including arc welding electrodes),3319
+28195,5,Manufacture and repair of packaging machinery,2819
+28195,5,Manufacture and repair of packaging machinery,3312
+28195,5,Manufacture and repair of packaging machinery,3319
+28199,5,Manufacture and repair of other general purpose machinery and equipment except electrical and electronic n.e.c.,2818
+28199,5,Manufacture and repair of other general purpose machinery and equipment except electrical and electronic n.e.c.,2819
+28199,5,Manufacture and repair of other general purpose machinery and equipment except electrical and electronic n.e.c.,3312
+28199,5,Manufacture and repair of other general purpose machinery and equipment except electrical and electronic n.e.c.,3319
+28210,5,Manufacture and repair of agricultural and forestry machinery,2821
+28210,5,Manufacture and repair of agricultural and forestry machinery,3312
+28221,5,"Manufacture and repair of machinery and machine-tools - metal cutting types (e.g. lathes, milling machines, shaping machines)",2822
+28221,5,"Manufacture and repair of machinery and machine-tools - metal cutting types (e.g. lathes, milling machines, shaping machines)",2823
+28221,5,"Manufacture and repair of machinery and machine-tools - metal cutting types (e.g. lathes, milling machines, shaping machines)",3312
+28222,5,"Manufacture and repair of machinery and machine-tools - metal forming types (e.g. forging press, cold heading machines, press breaks)",2822
+28222,5,"Manufacture and repair of machinery and machine-tools - metal forming types (e.g. forging press, cold heading machines, press breaks)",2823
+28222,5,"Manufacture and repair of machinery and machine-tools - metal forming types (e.g. forging press, cold heading machines, press breaks)",3312
+28223,5,"Manufacture of dies, moulds, tools, jigs and fixtures",2822
+28223,5,"Manufacture of dies, moulds, tools, jigs and fixtures",2823
+28223,5,"Manufacture of dies, moulds, tools, jigs and fixtures",3312
+28224,5,"Manufacture of machine tool accessories (e.g. small cutting tools, precision measuring tools and other attachments such as tool holders)",2822
+28224,5,"Manufacture of machine tool accessories (e.g. small cutting tools, precision measuring tools and other attachments such as tool holders)",2823
+28224,5,"Manufacture of machine tool accessories (e.g. small cutting tools, precision measuring tools and other attachments such as tool holders)",3312
+28225,5,Manufacture and repair of metal additive manufacturing (AM) equipment (including metal powder),2822
+28225,5,Manufacture and repair of metal additive manufacturing (AM) equipment (including metal powder),2823
+28225,5,Manufacture and repair of metal additive manufacturing (AM) equipment (including metal powder),3312
+28229,5,Manufacture and repair of metal-forming machinery and machine tools n.e.c. (including metalworking machinery),2822
+28229,5,Manufacture and repair of metal-forming machinery and machine tools n.e.c. (including metalworking machinery),2823
+28229,5,Manufacture and repair of metal-forming machinery and machine tools n.e.c. (including metalworking machinery),3312
+28241,5,Manufacture and repair of oil rigs,2824
+28241,5,Manufacture and repair of oil rigs,3312
+28242,5,"Manufacture and repair of other oilfield and gasfield machinery and equipment (e.g. derricks, tool joints)",2824
+28242,5,"Manufacture and repair of other oilfield and gasfield machinery and equipment (e.g. derricks, tool joints)",3312
+28243,5,Manufacture and repair of construction machinery and parts,2824
+28243,5,Manufacture and repair of construction machinery and parts,3312
+28249,5,"Manufacture and repair of machinery for mining, quarrying and construction n.e.c.",2824
+28249,5,"Manufacture and repair of machinery for mining, quarrying and construction n.e.c.",3312
+28251,5,Manufacture and repair of machinery for food products processing,2825
+28251,5,Manufacture and repair of machinery for food products processing,3312
+28252,5,Manufacture and repair of machinery for beverage production,2825
+28252,5,Manufacture and repair of machinery for beverage production,3312
+28253,5,Manufacture and repair of machinery for tobacco processing,2825
+28253,5,Manufacture and repair of machinery for tobacco processing,3312
+28260,5,"Manufacture and repair of machinery for textile, apparel and leather production",2826
+28260,5,"Manufacture and repair of machinery for textile, apparel and leather production",3312
+28271,5,Manufacture of probe cards,2829
+28271,5,Manufacture of probe cards,3312
+28272,5,Manufacture of bonding tools,2829
+28272,5,Manufacture of bonding tools,3312
+28273,5,Manufacture and repair of semiconductor assembly and testing equipment (including computer burn-in system),2829
+28273,5,Manufacture and repair of semiconductor assembly and testing equipment (including computer burn-in system),3312
+28274,5,Manufacture and repair of semiconductor foundry equipment,2829
+28274,5,Manufacture and repair of semiconductor foundry equipment,3312
+28291,5,Manufacture and repair of water/waste water treatment equipment,2829
+28291,5,Manufacture and repair of water/waste water treatment equipment,3312
+28292,5,Manufacture and repair of plastic processing machinery,2829
+28292,5,Manufacture and repair of plastic processing machinery,3312
+28293,5,Manufacture and repair of woodworking machinery,2829
+28293,5,Manufacture and repair of woodworking machinery,3312
+28294,5,Manufacture and repair of polymer additive manufacturing (AM) equipment,2829
+28294,5,Manufacture and repair of polymer additive manufacturing (AM) equipment,3312
+28299,5,"Manufacture and repair of other special purpose machinery n.e.c. (including plating equipment, industrial paint mixers and chemical mixing equipment)",2829
+28299,5,"Manufacture and repair of other special purpose machinery n.e.c. (including plating equipment, industrial paint mixers and chemical mixing equipment)",3312
+28300,5,"Installation of industrial machinery and equipment, mechanical engineering works",3320
+29100,5,Manufacture and assembly of motor vehicles,2910
+29200,5,"Manufacture of motor vehicle bodies (coachwork), trailers and semi-trailers",2920
+29300,5,"Manufacture of parts and accessories for motor vehicles (e.g. engine parts, brakes, clutches, axles, gear boxes)",2930
+30110,5,"Building and repairing of ships, tankers and other ocean-going vessels (including conversion of ships into off-shore structures)",3011
+30110,5,"Building and repairing of ships, tankers and other ocean-going vessels (including conversion of ships into off-shore structures)",3315
+30120,5,"Building and repair of pleasure crafts, lighters and boats",3012
+30120,5,"Building and repair of pleasure crafts, lighters and boats",3315
+30200,5,"Manufacture and repair of railway and tramway locomotives and rolling stock (including specialised parts except engines, electric motors and signalling equipment)",3020
+30200,5,"Manufacture and repair of railway and tramway locomotives and rolling stock (including specialised parts except engines, electric motors and signalling equipment)",3315
+30301,5,Manufacture and assembly of aircraft and spacecraft (including aircraft engines and other parts),3030
+30302,5,Repair and servicing of aircraft and spacecraft (including aircraft engines and other parts),3030
+30302,5,Repair and servicing of aircraft and spacecraft (including aircraft engines and other parts),3315
+30400,5,Manufacture of military fighting vehicles,3040
+30400,5,Manufacture of military fighting vehicles,3315
+30910,5,Manufacture and assembly of motorcycles and scooters (including engines and other parts and accessories),3091
+30920,5,"Manufacture and assembly of bicycles, tricycles, trishaws and invalid carriages (including parts and accessories)",3092
+30990,5,"Manufacture of other transport equipment n.e.c. (e.g. carts, wagons)",3099
+31001,5,Manufacture of furniture and fixtures of wood (including upholstery),3100
+31002,5,Manufacture of furniture of rattan and cane,3100
+31003,5,Manufacture of furniture and fixtures primarily of metal,3100
+31004,5,"Manufacture of furniture of other materials except primarily of stone, ceramic or concrete",3100
+31005,5,Manufacture of window and door screens and shades,3100
+31006,5,Manufacture of mattresses including those of foam rubber,3100
+31009,5,Manufacture of furniture n.e.c.,3100
+32111,5,Manufacture of jewellery except costume jewellery,3211
+32112,5,Manufacture of pewter ware,3211
+32119,5,Manufacture of jewellery and related articles n.e.c. (except costume jewellery),3211
+32120,5,Manufacture of costume jewellery and related articles,3212
+32200,5,Manufacture of musical instruments,3220
+32300,5,"Manufacture of sporting and athletic goods (including gym, diving and underwater equipment)",3230
+32400,5,Manufacture of games and toys,3240
+32501,5,Manufacture of medical research and clinical diagnostic instruments and supplies (e.g. reagents),2660
+32501,5,Manufacture of medical research and clinical diagnostic instruments and supplies (e.g. reagents),3250
+32502,5,"Manufacture of medical disposables and surgical supplies (e.g. test kits, syringes, tubes, fluid administration sets)",3250
+32503,5,"Manufacture of implantables and artificial limbs (e.g. heart valves, stents, orthopaedic implants)",3250
+32504,5,"Manufacture of ophthalmic goods (e.g. spectacles, contact lenses and parts)",3250
+32509,5,"Manufacture of medical and dental tools, instruments and supplies n.e.c.",3250
+32901,5,Manufacture of signs and advertising displays (including neon-lighting),3290
+32909,5,Other manufacturing industries n.e.c.,3290
+35101,5,Generation of electricity by fossil fuels,3510
+35102,5,"Generation of electricity by other sources (e.g. solar power, biofuels etc)",3510
+35103,5,"Transmission, distribution and sale of electricity",3510
+35104,5,"Other related services (e.g. electricity brokers, meter reading)",3510
+35201,5,Manufacture of gas; distribution of gaseous fuels through mains,3520
+35201,5,Manufacture of gas; distribution of gaseous fuels through mains,5221
+35202,5,Processing of natural gas,3520
+35203,5,Other related services (e.g. arranging for sale of natural gas),3520
+35300,5,Supply of air or water for cooling or heating purposes,3530
+36000,5,"Collection, purification and distribution of water (including desalination of water)",3600
+37000,5,Operation of sewer systems (including sewer treatment facilities),3700
+38100,5,Collection of waste,3811
+38100,5,Collection of waste,3812
+38200,5,Treatment and disposal of waste (including remediation activities),3821
+38200,5,Treatment and disposal of waste (including remediation activities),3822
+38200,5,Treatment and disposal of waste (including remediation activities),3900
+38301,5,Recycling of metal waste and scrap,3830
+38309,5,Recycling of non-metal waste n.e.c. (e.g. marine clay and oil sludge),3830
+41001,5,General contractors (building construction including major upgrading works),4100
+41002,5,Structural repair contractors,4100
+41009,5,Building construction n.e.c.,4100
+42101,5,General contractors (non-building construction),4210
+42102,5,Road and railway construction,4210
+42103,5,"Bridge, tunnel, viaduct and expressway construction",4210
+42201,5,Water and gas pipe-line and sewer construction,4220
+42202,5,Communications and power line construction,4220
+42901,5,Land reclamation works,4290
+42902,5,Dam and drainage construction,4290
+42903,5,"Marine construction (e.g. harbours, piers, docks, wharves)",4290
+42909,5,Construction of other civil engineering projects n.e.c. (e.g. playground systems),4290
+43110,5,Wrecking and demolition works,4311
+43121,5,"Soil investigation, treatment and stabilisation (including grouting and guniting)",4312
+43122,5,Excavation and earthmoving works,4312
+43129,5,Site preparation n.e.c.,4312
+43210,5,Electrical works,4321
+43220,5,"Installation of plumbing, heating (non-electric) and air-conditioning systems",4322
+43291,5,"Installation and erection of building equipment (e.g. lifts, escalators, travellators)",4329
+43292,5,Installation of fire protection and security alarm systems,4329
+43293,5,Installation of building automated systems for remote monitoring,4329
+43294,5,Installation of awning and window shades,4329
+43295,5,Installation of thermal and sound insulation (including solar control films),4329
+43296,5,Signcraft installation,4329
+43299,5,Other construction installation n.e.c.,4329
+43301,5,Renovation contractors,4330
+43302,5,Tile setting and plastering,4330
+43303,5,Joinery and other woodworks (e.g. laminated or parquet flooring),4330
+43304,5,Painting and decorating,4330
+43305,5,Glass and glazing works (including mirror and shower screen installation),4330
+43306,5,Curtain walling/cladding works,4330
+43307,5,"Installation of doors, gates, grilles and windows",4330
+43309,5,Building completion and finishing n.e.c.,4330
+43901,5,"Foundation works (including micropiling, conventional piling and underpinning)",4390
+43902,5,"Brick laying, stone setting and cement works",4390
+43903,5,Roofing works (including timber carcassing),4390
+43904,5,Production of pre-cast components,1622
+43904,5,Production of pre-cast components,2395
+43904,5,Production of pre-cast components,2511
+43904,5,Production of pre-cast components,4390
+43905,5,Scaffolding works,4390
+43906,5,Sandblasting/Shotblasting works (except ships),4390
+43907,5,Production of Prefabricated Prefinished Volumetric Construction (PPVC) modules,1622
+43907,5,Production of Prefabricated Prefinished Volumetric Construction (PPVC) modules,2395
+43907,5,Production of Prefabricated Prefinished Volumetric Construction (PPVC) modules,2511
+43907,5,Production of Prefabricated Prefinished Volumetric Construction (PPVC) modules,4390
+43909,5,Other specialised construction and related activities n.e.c. (excluding online marketplaces),4390
+46100,5,Wholesale on a fee or commission basis (excluding online marketplaces),4610
+46211,5,Wholesale of cut flowers and plants,4620
+46212,5,Wholesale of aquarium fishes (including food and accessories),4620
+46213,5,Wholesale of pet birds and animals (including food and accessories),4620
+46219,5,Wholesale of agricultural raw materials and live animals n.e.c. (excluding tropical produce),4620
+46219,5,Wholesale of agricultural raw materials and live animals n.e.c. (excluding tropical produce),4669
+46221,5,Wholesale of rubber (including rubber brokers),4669
+46222,5,Wholesale of pepper and other spices,4630
+46223,5,"Wholesale of coffee, cocoa and tea",4630
+46224,5,Wholesale of coconut,4630
+46225,5,Wholesale of palm oil,4630
+46229,5,Wholesale of tropical produce n.e.c.,4620
+46229,5,Wholesale of tropical produce n.e.c.,4669
+46301,5,Wholesale of fruits and vegetables (including fresh and frozen),4630
+46302,5,"Wholesale of livestock, meat, poultry, eggs and seafood (including fresh and frozen)",4630
+46303,5,"Wholesale of a general line (wide range) of groceries (e.g. cereals, sugar, edible oils, sauces and dairy products)",4630
+46304,5,Wholesale of confectionery and bakery products,4630
+46305,5,Wholesale of ice-cream,4630
+46306,5,Wholesale of health supplements,4630
+46307,5,"Wholesale of liquor, soft drinks and beverages",4630
+46308,5,Wholesale of tobacco products,4630
+46309,5,"Wholesale of food, beverages and tobacco n.e.c. (including dried or canned)",4630
+46411,5,Wholesale of textiles and leathers,4620
+46411,5,Wholesale of textiles and leathers,4641
+46411,5,Wholesale of textiles and leathers,4669
+46412,5,Wholesale of adults' clothing,4641
+46413,5,Wholesale of children and infants’ clothing (including products and accessories for infants),4641
+46414,5,Wholesale of footwear,4641
+46415,5,"Wholesale of bags, luggage and travel accessories",4649
+46416,5,"Wholesale of sewing and clothing accessories (e.g. button, thread, lace, zip, belt, tie)",4649
+46421,5,Wholesale of jewellery made from precious metals and stones,4649
+46422,5,Wholesale of costume jewellery,4649
+46423,5,Wholesale of watches and clocks,4649
+46424,5,Wholesale of cosmetics and toiletries,4649
+46429,5,Wholesale of personal effects n.e.c.,4649
+46431,5,"Wholesale of furniture (including mattresses, cushions)",4649
+46432,5,"Wholesale of furnishings (including curtains, carpets, wallpaper)",4649
+46433,5,Wholesale of lighting and lighting accessories,4649
+46434,5,"Wholesale of crockery, cutlery and kitchen utensils",4649
+46435,5,Wholesale of household electrical appliances and equipment (including household air-conditioners),4649
+46436,5,"Wholesale of audio and video equipment except electrical and electronic components (e.g. radio and television sets, sound reproducing and recording equipment)",4649
+46437,5,Wholesale of musical instruments and scores,4649
+46439,5,"Wholesale of furniture, home furnishings and other household equipment n.e.c.",4649
+46441,5,Wholesale of sporting goods and equipment (including bicycles and healthcare equipment),4649
+46442,5,"Wholesale of music and video recordings (e.g. DVDs, Blu-ray discs)",4649
+46443,5,Wholesale of toys and games,4649
+46444,5,Wholesale of computer games (including electronic games and video game consoles),4649
+46449,5,Wholesale of sporting and other recreational goods n.e.c.,4649
+46451,5,Wholesale of antiques and works of art,4649
+46452,5,Wholesale of handicrafts and gifts,4649
+46453,5,Wholesale of artificial flowers and plants,4649
+46459,5,Wholesale of handicrafts and fancy goods n.e.c.,4649
+46461,5,Wholesale of medicinal and pharmaceutical products (Western),4649
+46462,5,Wholesale of medicine and herbs (other than Western),4649
+46471,5,Wholesale of paper and paper products,4649
+46472,5,Wholesale of packaging materials,4649
+46473,5,Wholesale of stationery,4649
+46474,5,Wholesale of books and magazines,4649
+46479,5,"Wholesale of paper, paper and cellophane products and stationery n.e.c.",4649
+46491,5,Wholesale of optical equipment and supplies (excluding binoculars),4649
+46492,5,Wholesale of photographic equipment and supplies (including binoculars),4649
+46499,5,Wholesale of other household goods n.e.c.,4649
+46499,5,Wholesale of other household goods n.e.c.,4669
+46511,5,Wholesale of computer hardware and peripheral equipment (except cybersecurity related hardware and peripheral equipment),4651
+46512,5,Wholesale of computer software (except games and cybersecurity software),4651
+46513,5,"Wholesale of computer accessories (e.g. memory cards, computer cables)",4651
+46514,5,"Wholesale of cybersecurity software, hardware and peripheral equipment",4651
+46521,5,Wholesale of telecommunications equipment (excluding handphones),4652
+46522,5,Wholesale of electronic components,4652
+46523,5,"Wholesale of handphones, handphone peripheral equipment and other telecommunications equipment",4652
+46530,5,"Wholesale of agricultural machinery, equipment and supplies",4653
+46541,5,Wholesale of industrial machinery and equipment (e.g. industrial crane),4659
+46542,5,Wholesale of construction equipment (e.g. concrete mixer),4659
+46543,5,"Wholesale of lifts, escalators and industrial and office air-conditioning equipment",4659
+46544,5,Wholesale of electrical and wiring accessories,4659
+46549,5,"Wholesale of industrial, construction and related machinery and equipment n.e.c.",4659
+46551,5,Wholesale of marine equipment and accessories (including marine navigational equipment and radar),4659
+46552,5,Wholesale of aircraft equipment and supplies (including aeronautical equipment),4659
+46559,5,Wholesale of transport equipment except motor vehicles and motorcycles n.e.c.,4659
+46561,5,Wholesale of motor vehicles except motorcycles and scooters,4510
+46562,5,Wholesale of motorcycles and scooters,4540
+46563,5,Wholesale of parts and accessories for vehicles,4530
+46591,5,Wholesale of office machines and equipment (including accessories),4659
+46592,5,"Wholesale of medical, professional, scientific and precision equipment",4659
+46593,5,Wholesale of commercial food service equipment (e.g. hotel kitchen equipment),4659
+46594,5,Wholesale of service establishment equipment and supplies (e.g. beauty salon equipment),4659
+46595,5,Wholesale of security and safety equipment,4659
+46599,5,Wholesale of other machinery and equipment n.e.c.,4659
+46610,5,Wholesale of fuels and related products,4661
+46620,5,Wholesale of metals and metal ores (e.g. steel pipes) except general hardware,4662
+46631,5,"Wholesale of logs, sawn timber, plywood and related products",4663
+46632,5,"Wholesale of general hardware (e.g. locks, hinges)",4663
+46633,5,"Wholesale of structural clay and concrete products (e.g. mosaic tiles, bricks)",4663
+46634,5,Wholesale of paints (including varnishes and supplies),4663
+46635,5,Wholesale of glass,4663
+46639,5,"Wholesale of construction materials, hardware, plumbing and heating equipment and supplies n.e.c. (e.g. cement, sand)",4663
+46641,5,Wholesale of basic industrial chemicals (except fertilisers),4669
+46642,5,Wholesale of chemical fertilisers,4669
+46643,5,Wholesale of petrochemical products,4669
+46649,5,Wholesale of chemicals and chemical products n.e.c.,4669
+46651,5,"Wholesale of scrap, junk and waste dealers",4669
+46659,5,"Wholesale of other intermediate products, waste and scrap n.e.c.",4669
+46661,5,Ship chandlers,4669
+46662,5,Ship bunkering,4669
+46900,5,Wholesale trade of a variety of goods without a dominant product,4690
+47101,5,Supermarkets and hypermarkets,4711
+47101,5,Supermarkets and hypermarkets,4719
+47101,5,Supermarkets and hypermarkets,4791
+47101,5,Supermarkets and hypermarkets,4799
+47102,5,"Mini-marts, convenience stores and provision shops",4711
+47102,5,"Mini-marts, convenience stores and provision shops",4791
+47102,5,"Mini-marts, convenience stores and provision shops",4799
+47103,5,Department stores,4719
+47103,5,Department stores,4791
+47103,5,Department stores,4799
+47109,5,Retail sale in other non-specialised stores n.e.c.,4719
+47109,5,Retail sale in other non-specialised stores n.e.c.,4791
+47109,5,Retail sale in other non-specialised stores n.e.c.,4799
+47211,5,Retail sale of fruits and vegetables,4721
+47211,5,Retail sale of fruits and vegetables,4791
+47211,5,Retail sale of fruits and vegetables,4799
+47212,5,"Retail sale of meat, poultry, eggs and seafood",4721
+47212,5,"Retail sale of meat, poultry, eggs and seafood",4791
+47212,5,"Retail sale of meat, poultry, eggs and seafood",4799
+47213,5,Retail sale of confectionery and bakery products (not manufactured on site),4721
+47213,5,Retail sale of confectionery and bakery products (not manufactured on site),4791
+47213,5,Retail sale of confectionery and bakery products (not manufactured on site),4799
+47214,5,Retail sale of health supplements,4721
+47214,5,Retail sale of health supplements,4791
+47214,5,Retail sale of health supplements,4799
+47219,5,Retail sale of food n.e.c.,4721
+47219,5,Retail sale of food n.e.c.,4791
+47219,5,Retail sale of food n.e.c.,4799
+47220,5,Retail sale of beverages,4722
+47220,5,Retail sale of beverages,4791
+47220,5,Retail sale of beverages,4799
+47230,5,Retail sale of tobacco products,4723
+47230,5,Retail sale of tobacco products,4791
+47230,5,Retail sale of tobacco products,4799
+47311,5,Retail sale of motor vehicles except motorcycles and scooters,4510
+47311,5,Retail sale of motor vehicles except motorcycles and scooters,4791
+47311,5,Retail sale of motor vehicles except motorcycles and scooters,4799
+47312,5,Retail sale of motorcycles and scooters,4540
+47312,5,Retail sale of motorcycles and scooters,4791
+47312,5,Retail sale of motorcycles and scooters,4799
+47313,5,Retail sale of tyres and batteries,4530
+47313,5,Retail sale of tyres and batteries,4791
+47313,5,Retail sale of tyres and batteries,4799
+47314,5,Retail sale of spare parts and accessories for motor vehicles,4530
+47314,5,Retail sale of spare parts and accessories for motor vehicles,4791
+47314,5,Retail sale of spare parts and accessories for motor vehicles,4799
+47320,5,"Retail sale of automotive fuel (e.g. petrol kiosks, CNG refilling stations)",4730
+47320,5,"Retail sale of automotive fuel (e.g. petrol kiosks, CNG refilling stations)",4791
+47320,5,"Retail sale of automotive fuel (e.g. petrol kiosks, CNG refilling stations)",4799
+47411,5,Retail sale of handphones and peripheral equipment,4741
+47411,5,Retail sale of handphones and peripheral equipment,4791
+47411,5,Retail sale of handphones and peripheral equipment,4799
+47412,5,"Retail sale of computer hardware (including handheld computers) and peripheral equipment, and computer software (except games and cybersecurity hardware and software)",4741
+47412,5,"Retail sale of computer hardware (including handheld computers) and peripheral equipment, and computer software (except games and cybersecurity hardware and software)",4791
+47412,5,"Retail sale of computer hardware (including handheld computers) and peripheral equipment, and computer software (except games and cybersecurity hardware and software)",4799
+47413,5,Retail sale of computer games (including electronic games and video game consoles),4741
+47413,5,Retail sale of computer games (including electronic games and video game consoles),4791
+47413,5,Retail sale of computer games (including electronic games and video game consoles),4799
+47414,5,Retail sale of computer and office equipment consumables (e.g. printer cartridges),4741
+47414,5,Retail sale of computer and office equipment consumables (e.g. printer cartridges),4791
+47414,5,Retail sale of computer and office equipment consumables (e.g. printer cartridges),4799
+47415,5,"Retail sale of cybersecurity software, hardware and peripheral equipment",4741
+47415,5,"Retail sale of cybersecurity software, hardware and peripheral equipment",4791
+47415,5,"Retail sale of cybersecurity software, hardware and peripheral equipment",4799
+47420,5,"Retail sale of audio and video equipment (e.g. radio and television sets, sound reproducing and recording equipment)",4742
+47420,5,"Retail sale of audio and video equipment (e.g. radio and television sets, sound reproducing and recording equipment)",4791
+47420,5,"Retail sale of audio and video equipment (e.g. radio and television sets, sound reproducing and recording equipment)",4799
+47510,5,Retail sale of textiles,4751
+47510,5,Retail sale of textiles,4791
+47510,5,Retail sale of textiles,4799
+47521,5,Retail sale of paints,4752
+47521,5,Retail sale of paints,4791
+47521,5,Retail sale of paints,4799
+47522,5,"Retail sale of hardware (e.g. chains, changkols, axes)",4752
+47522,5,"Retail sale of hardware (e.g. chains, changkols, axes)",4791
+47522,5,"Retail sale of hardware (e.g. chains, changkols, axes)",4799
+47529,5,"Retail sale of hardware, paint and glass n.e.c. (e.g. wood, glass, sanitary ware, Do-It-Yourself materials)",4752
+47529,5,"Retail sale of hardware, paint and glass n.e.c. (e.g. wood, glass, sanitary ware, Do-It-Yourself materials)",4791
+47529,5,"Retail sale of hardware, paint and glass n.e.c. (e.g. wood, glass, sanitary ware, Do-It-Yourself materials)",4799
+47531,5,"Retail sale of furniture (including mattresses, cushions)",4759
+47531,5,"Retail sale of furniture (including mattresses, cushions)",4791
+47531,5,"Retail sale of furniture (including mattresses, cushions)",4799
+47532,5,"Retail sale of furnishings (e.g. curtains, carpets, pillow cases)",4753
+47532,5,"Retail sale of furnishings (e.g. curtains, carpets, pillow cases)",4791
+47532,5,"Retail sale of furnishings (e.g. curtains, carpets, pillow cases)",4799
+47533,5,Retail sale of lighting and lighting accessories,4759
+47533,5,Retail sale of lighting and lighting accessories,4791
+47533,5,Retail sale of lighting and lighting accessories,4799
+47534,5,"Retail sale of crockery, cutlery and kitchen utensils",4759
+47534,5,"Retail sale of crockery, cutlery and kitchen utensils",4791
+47534,5,"Retail sale of crockery, cutlery and kitchen utensils",4799
+47535,5,"Retail sale of household electrical appliances and equipment (e.g. vacuum cleaners, washing machines, refrigerators)",4759
+47535,5,"Retail sale of household electrical appliances and equipment (e.g. vacuum cleaners, washing machines, refrigerators)",4791
+47535,5,"Retail sale of household electrical appliances and equipment (e.g. vacuum cleaners, washing machines, refrigerators)",4799
+47536,5,Retail sale of musical instruments and scores,4759
+47536,5,Retail sale of musical instruments and scores,4791
+47536,5,Retail sale of musical instruments and scores,4799
+47537,5,Retail sale of security and safety equipment,4759
+47537,5,Retail sale of security and safety equipment,4791
+47537,5,Retail sale of security and safety equipment,4799
+47539,5,"Retail sale of electrical household appliances, furniture, lighting equipment and other household articles n.e.c.",4759
+47539,5,"Retail sale of electrical household appliances, furniture, lighting equipment and other household articles n.e.c.",4791
+47539,5,"Retail sale of electrical household appliances, furniture, lighting equipment and other household articles n.e.c.",4799
+47610,5,"Retail sale of books, newspapers and stationery (including newsvendors)",4761
+47610,5,"Retail sale of books, newspapers and stationery (including newsvendors)",4774
+47610,5,"Retail sale of books, newspapers and stationery (including newsvendors)",4791
+47610,5,"Retail sale of books, newspapers and stationery (including newsvendors)",4799
+47620,5,"Retail sale of music and video recordings (e.g. DVDs, Blu-ray discs)",4762
+47620,5,"Retail sale of music and video recordings (e.g. DVDs, Blu-ray discs)",4774
+47620,5,"Retail sale of music and video recordings (e.g. DVDs, Blu-ray discs)",4791
+47620,5,"Retail sale of music and video recordings (e.g. DVDs, Blu-ray discs)",4799
+47630,5,"Retail sale of sports apparel and equipment (including bicycles, boats and healthcare equipment)",4763
+47630,5,"Retail sale of sports apparel and equipment (including bicycles, boats and healthcare equipment)",4791
+47630,5,"Retail sale of sports apparel and equipment (including bicycles, boats and healthcare equipment)",4799
+47640,5,Retail sale of games and toys,4764
+47640,5,Retail sale of games and toys,4791
+47640,5,Retail sale of games and toys,4799
+47711,5,Retail sale of clothing for adults,4771
+47711,5,Retail sale of clothing for adults,4791
+47711,5,Retail sale of clothing for adults,4799
+47712,5,Retail sale of children and infants’ clothing (including products and accessories for infants),4771
+47712,5,Retail sale of children and infants’ clothing (including products and accessories for infants),4791
+47712,5,Retail sale of children and infants’ clothing (including products and accessories for infants),4799
+47713,5,Retail sale of footwear,4771
+47713,5,Retail sale of footwear,4791
+47713,5,Retail sale of footwear,4799
+47714,5,"Retail sale of bags, luggage and travel accessories",4771
+47714,5,"Retail sale of bags, luggage and travel accessories",4791
+47714,5,"Retail sale of bags, luggage and travel accessories",4799
+47715,5,"Retail sale of sewing and clothing accessories (e.g. button, thread, lace, zip, belt, tie)",4771
+47715,5,"Retail sale of sewing and clothing accessories (e.g. button, thread, lace, zip, belt, tie)",4791
+47715,5,"Retail sale of sewing and clothing accessories (e.g. button, thread, lace, zip, belt, tie)",4799
+47719,5,"Retail sale of clothing, footwear and leather articles n.e.c.",4771
+47719,5,"Retail sale of clothing, footwear and leather articles n.e.c.",4791
+47719,5,"Retail sale of clothing, footwear and leather articles n.e.c.",4799
+47721,5,Retail sale of cosmetics and toiletries (including skin care products),4772
+47721,5,Retail sale of cosmetics and toiletries (including skin care products),4791
+47721,5,Retail sale of cosmetics and toiletries (including skin care products),4799
+47722,5,Pharmacies and drug stores (Western),4772
+47722,5,Pharmacies and drug stores (Western),4791
+47722,5,Pharmacies and drug stores (Western),4799
+47723,5,Chinese medicine shops,4772
+47723,5,Chinese medicine shops,4791
+47723,5,Chinese medicine shops,4799
+47729,5,Retail sale of pharmaceutical and medical goods n.e.c.,4772
+47729,5,Retail sale of pharmaceutical and medical goods n.e.c.,4791
+47729,5,Retail sale of pharmaceutical and medical goods n.e.c.,4799
+47731,5,Retail sale of jewellery made from precious metals and stones,4773
+47731,5,Retail sale of jewellery made from precious metals and stones,4791
+47731,5,Retail sale of jewellery made from precious metals and stones,4799
+47732,5,Retail sale of costume jewellery,4773
+47732,5,Retail sale of costume jewellery,4791
+47732,5,Retail sale of costume jewellery,4799
+47733,5,Retail sale of watches and clocks,4773
+47733,5,Retail sale of watches and clocks,4791
+47733,5,Retail sale of watches and clocks,4799
+47739,5,Retail sale of personal effects n.e.c.,4773
+47739,5,Retail sale of personal effects n.e.c.,4791
+47739,5,Retail sale of personal effects n.e.c.,4799
+47741,5,Retail sale of antiques and works of art,4773
+47741,5,Retail sale of antiques and works of art,4774
+47741,5,Retail sale of antiques and works of art,4791
+47741,5,Retail sale of antiques and works of art,4799
+47742,5,"Retail sale of handicrafts, collectibles and gifts",4773
+47742,5,"Retail sale of handicrafts, collectibles and gifts",4791
+47742,5,"Retail sale of handicrafts, collectibles and gifts",4799
+47743,5,Retail sale of cut flowers (including wreaths),4773
+47743,5,Retail sale of cut flowers (including wreaths),4791
+47743,5,Retail sale of cut flowers (including wreaths),4799
+47744,5,Retail sale of artificial flowers and plants,4773
+47744,5,Retail sale of artificial flowers and plants,4791
+47744,5,Retail sale of artificial flowers and plants,4799
+47745,5,Retail sale of aquarium fishes (including food and accessories),4773
+47745,5,Retail sale of aquarium fishes (including food and accessories),4791
+47745,5,Retail sale of aquarium fishes (including food and accessories),4799
+47746,5,Retail sale of pet birds and animals (including food and accessories),4773
+47746,5,Retail sale of pet birds and animals (including food and accessories),4791
+47746,5,Retail sale of pet birds and animals (including food and accessories),4799
+47749,5,"Retail sale of handicrafts and fancy goods, flowers, plants and pet animals n.e.c.",4773
+47749,5,"Retail sale of handicrafts and fancy goods, flowers, plants and pet animals n.e.c.",4774
+47749,5,"Retail sale of handicrafts and fancy goods, flowers, plants and pet animals n.e.c.",4791
+47749,5,"Retail sale of handicrafts and fancy goods, flowers, plants and pet animals n.e.c.",4799
+47751,5,Retail sale of spectacles and other optical goods,4773
+47751,5,Retail sale of spectacles and other optical goods,4791
+47751,5,Retail sale of spectacles and other optical goods,4799
+47752,5,Retail sale of cameras and other photographic goods,4773
+47752,5,Retail sale of cameras and other photographic goods,4791
+47752,5,Retail sale of cameras and other photographic goods,4799
+47759,5,Retail sale of optical and photographic goods n.e.c.,4773
+47759,5,Retail sale of optical and photographic goods n.e.c.,4791
+47759,5,Retail sale of optical and photographic goods n.e.c.,4799
+47761,5,Retail sale of joss paper and other ceremonial products,4773
+47761,5,Retail sale of joss paper and other ceremonial products,4791
+47761,5,Retail sale of joss paper and other ceremonial products,4799
+47762,5,Retail sale of liquefied petroleum gas (LPG),4773
+47762,5,Retail sale of liquefied petroleum gas (LPG),4791
+47762,5,Retail sale of liquefied petroleum gas (LPG),4799
+47769,5,Retail sale of specific commodities n.e.c.,4773
+47769,5,Retail sale of specific commodities n.e.c.,4791
+47769,5,Retail sale of specific commodities n.e.c.,4799
+47770,5,Retail sale of second-hand goods in stores,4774
+47770,5,Retail sale of second-hand goods in stores,4791
+47770,5,Retail sale of second-hand goods in stores,4799
+47801,5,Stalls (including pushcarts) selling uncooked food,4781
+47802,5,Stalls (including pushcarts) selling other commodities (other than uncooked food),4781
+47802,5,Stalls (including pushcarts) selling other commodities (other than uncooked food),4782
+47802,5,Stalls (including pushcarts) selling other commodities (other than uncooked food),4789
+49101,5,Railroad services,4911
+49101,5,Railroad services,4912
+49102,5,Mass rapid transit systems (including light rail),4911
+49211,5,Public bus services (scheduled services),4921
+49212,5,Chartered bus services (including school buses),4922
+49213,5,Inter-country bus services,4922
+49214,5,Street-hail and ride-hail service providers,4921
+49214,5,Street-hail and ride-hail service providers,4922
+49215,5,Rental and leasing of cars with driver (excluding street-hail and ride-hail service providers),4922
+49220,5,Aerial cableways (including cable car services),4922
+49231,5,Freight transport by road,4923
+49232,5,Moving services,4923
+49233,5,Rental and leasing of freight land transport vehicle (e.g. lorries and trucks) with driver,4923
+49300,5,Transport via pipelines,4930
+50011,5,International cruise services,5011
+50012,5,Other sight-seeing cruise services (e.g. harbour and river cruises),5011
+50012,5,Other sight-seeing cruise services (e.g. harbour and river cruises),5021
+50013,5,Passenger ferry services,5011
+50013,5,Passenger ferry services,5021
+50014,5,Chartering of ships and boats with crew (passenger),5011
+50014,5,Chartering of ships and boats with crew (passenger),5021
+50021,5,"Shipping companies, including chartering of ships and boats with crew (freight)",5012
+50021,5,"Shipping companies, including chartering of ships and boats with crew (freight)",5022
+50022,5,"Operators and charterers of barges, tugboats and bumboats (freight)",5012
+50022,5,"Operators and charterers of barges, tugboats and bumboats (freight)",5022
+50023,5,Branches of foreign shipping lines,5012
+51001,5,Airlines (passenger),5110
+51002,5,Airlines (freight),5120
+51003,5,Branches of foreign airlines (passenger),5110
+51004,5,Branches of foreign airlines (freight),5120
+51005,5,Aircraft chartering with operator,5110
+51005,5,Aircraft chartering with operator,5120
+52101,5,General warehousing,5210
+52102,5,Refrigerated warehousing and storage,5210
+52103,5,Storage for dangerous goods,5210
+52109,5,"Specialised storage n.e.c. (e.g. wine warehousing, document storage and warehousing)",5210
+52211,5,Carpark management and operation services,5221
+52212,5,Motor vehicle towing services,5221
+52219,5,Supporting services to land transport n.e.c.,5221
+52221,5,Representative offices of foreign shipping lines,5222
+52222,5,Shipping agencies (freight),5222
+52223,5,Port operators,5222
+52224,5,Lighterage services,5222
+52225,5,Salvaging of distressed vessels and cargos,5222
+52226,5,Ship management services,5222
+52227,5,Ship brokering services,5222
+52229,5,Supporting services to water transport n.e.c.,5222
+52231,5,Representative offices of foreign airlines,5223
+52232,5,Airline agencies (freight),5223
+52233,5,Airport operation services,5223
+52234,5,Airport terminal services (e.g. ground service activities),5223
+52239,5,Supporting services to air transport n.e.c.,5223
+52241,5,Container depot services,5224
+52242,5,Crane services for all industries except construction,5224
+52243,5,Stevedoring services,5224
+52251,5,Classification societies,7490
+52252,5,Marine surveying services other than classification societies,7490
+52291,5,Cargo surveying services,5224
+52292,5,Freight transport arrangement,5229
+53100,5,National post activities (e.g. postal services),5310
+53200,5,Courier activities other than national post activities,5320
+55101,5,Hotels,5510
+55102,5,Chalets,5510
+55103,5,Short term accommodation activities other than hotels and chalets,5510
+55900,5,"Hostels and dormitories for students, workers and other individuals",5520
+55900,5,"Hostels and dormitories for students, workers and other individuals",5590
+56111,5,Restaurants,5610
+56112,5,Cafes,5610
+56112,5,Cafes,5630
+56121,5,Fast food outlets,5610
+56121,5,Fast food outlets,5630
+56122,5,"Food courts, coffee shops and canteens (with mainly food and beverage income)",5610
+56122,5,"Food courts, coffee shops and canteens (with mainly food and beverage income)",5629
+56122,5,"Food courts, coffee shops and canteens (with mainly food and beverage income)",5630
+56123,5,Food kiosks mainly for takeaway and delivery,5610
+56123,5,Food kiosks mainly for takeaway and delivery,5630
+56130,5,Pubs,5630
+56140,5,Stalls selling cooked food and prepared drinks (including stalls at food courts and mobile food hawkers),5610
+56140,5,Stalls selling cooked food and prepared drinks (including stalls at food courts and mobile food hawkers),5630
+56200,5,Food caterers,5621
+56200,5,Food caterers,5629
+58110,5,"Publishing of books, brochures, musical books and other publications",5811
+58110,5,"Publishing of books, brochures, musical books and other publications",5920
+58120,5,Publishing of directories and mailing lists (including financial databases),5812
+58131,5,Publishing of news,5813
+58132,5,"Publishing of journals, periodicals and magazines",5813
+58190,5,Other publishing activities (excluding online marketplaces),5819
+58201,5,Publishing of games software/applications,5820
+58202,5,Publishing of software/applications (non-games),5820
+59111,5,Movie production,5911
+59112,5,"Production of advertisements, corporate videos and event videos",5911
+59113,5,"Production of dramas, variety shows and documentaries (including production of television programme)",5911
+59114,5,Animation production,5911
+59119,5,"Movie, video, television and other programme production activities n.e.c.",5911
+59120,5,"Movie, video, television and other programme post-production activities (including remastering)",5912
+59131,5,Movie distribution,5913
+59132,5,"Distribution of television programmes (e.g. dramas, variety shows and documentaries)",5913
+59139,5,"Movie, video, television and other programme distribution activities n.e.c.",5913
+59140,5,Movie projection activities (including cinemas),5914
+59201,5,Sound recording production,5920
+59202,5,Music publishing and distribution activities,5920
+60100,5,Radio programme production and broadcasting,6010
+60200,5,"Television programming and broadcasting (including cable, satellite, terrestrial television, internet and mobile)",6020
+61011,5,"Wired telecommunications network operation (including fixed-line, fibre optics, local/international PSTN and leased circuits)",6110
+61012,5,Mobile cellular and other wireless telecommunications network operation,6120
+61013,5,Satellite telecommunications network operation,6130
+61091,5,Telecommunications resellers/third party telecommunications providers (including value-added network operators),6110
+61091,5,Telecommunications resellers/third party telecommunications providers (including value-added network operators),6120
+61091,5,Telecommunications resellers/third party telecommunications providers (including value-added network operators),6130
+61092,5,"Internet access providers, include ISPs",6110
+61092,5,"Internet access providers, include ISPs",6120
+61092,5,"Internet access providers, include ISPs",6130
+61099,5,Other telecommunications activities n.e.c. (e.g. provision of VoIP (Voice over Internet Protocol services)),6190
+62011,5,Development of software and applications (except games and cybersecurity),6201
+62012,5,Development of computer games,6201
+62013,5,Development of software for cybersecurity,6201
+62021,5,Information technology consultancy (except cybersecurity),6202
+62022,5,Information technology cybersecurity consultancy,6202
+62023,5,Computer facilities management activities,6202
+62090,5,Other information technology and computer service activities (e.g. disaster recovery services),6209
+63111,5,Data centres,6311
+63112,5,Hosting services by non-data centres,6311
+63119,5,"Data analytics, processing and related activities n.e.c.",6311
+63120,5,Internet search engines,6312
+63201,5,Online marketplaces for goods (including food),4610
+63201,5,Online marketplaces for goods (including food),4791
+63201,5,Online marketplaces for goods (including food),4799
+63201,5,Online marketplaces for goods (including food),5819
+63202,5,Online marketplaces for health services,5819
+63202,5,Online marketplaces for health services,8690
+63203,5,Online marketplaces for education services,5819
+63203,5,Online marketplaces for education services,8550
+63204,5,Online marketplaces for travel services,5819
+63204,5,Online marketplaces for travel services,7911
+63204,5,Online marketplaces for travel services,7912
+63204,5,Online marketplaces for travel services,7990
+63205,5,Online marketplaces for real estate services,5819
+63205,5,Online marketplaces for real estate services,6820
+63209,5,Online marketplaces for services n.e.c.,4390
+63209,5,Online marketplaces for services n.e.c.,5819
+63209,5,Online marketplaces for services n.e.c.,6910
+63209,5,Online marketplaces for services n.e.c.,6920
+63209,5,Online marketplaces for services n.e.c.,7710
+63209,5,Online marketplaces for services n.e.c.,7729
+63209,5,Online marketplaces for services n.e.c.,7730
+63209,5,Online marketplaces for services n.e.c.,7810
+63209,5,Online marketplaces for services n.e.c.,7820
+63209,5,Online marketplaces for services n.e.c.,8121
+63209,5,Online marketplaces for services n.e.c.,8129
+63209,5,Online marketplaces for services n.e.c.,9529
+63209,5,Online marketplaces for services n.e.c.,9609
+63901,5,News agency activities,6391
+63909,5,Other information service activities n.e.c.,6399
+64110,5,Central bank,6411
+64120,5,Full banks,6419
+64130,5,Wholesale banks,6419
+64140,5,Merchant banks,6419
+64150,5,Finance companies (with deposit taking functions),6419
+64190,5,Other monetary intermediation,6419
+64201,5,Bank/Financial holding companies (including insurance holding company),6420
+64202,5,Other holding companies,6420
+64300,5,"Trusts, funds and similar financial entities (e.g. collective portfolio investment funds (excluding those with rental income))",6430
+64910,5,Financial leasing companies,6491
+64921,5,Thrift and loan societies and credit associations,6492
+64922,5,Credit card services,6492
+64923,5,Mutual benefits organisations,6492
+64924,5,Money-lending,6492
+64925,5,Pawnbrokerage,6492
+64929,5,Other credit agencies n.e.c. (e.g. motor finance),6492
+64991,5,Factoring companies,6499
+64992,5,Representative offices of foreign banks,6499
+64993,5,Remittance services,6499
+64994,5,Treasury centres,6499
+64999,5,"Other financial service activities, except insurance and pension funding activities n.e.c.",6499
+65110,5,Life insurance,6511
+65121,5,Marine insurance,6512
+65122,5,Captive insurance,6512
+65123,5,"Import, export and credit insurance",6512
+65124,5,"General insurance (except marine and import, export & credit insurance)",6512
+65201,5,Life reinsurance,6520
+65202,5,General reinsurance,6520
+65301,5,Provident funding,6530
+65302,5,Pension funding,6530
+66110,5,Securities and commodities exchange,6611
+66121,5,"Stock, share and bond brokers and dealers",6612
+66122,5,Foreign exchange brokers and dealers,6612
+66123,5,Gold bullion brokers and dealers,6612
+66124,5,Commodity (excluding gold) and futures brokers and dealers,6612
+66125,5,Carbon credit brokers/traders,6612
+66126,5,Money-changing services,6612
+66129,5,Security dealings and commodity contracts brokerage activities n.e.c.,6612
+66191,5,"Trustee, fiduciary and custody services firms (including nominee companies, trustees and REIT trustees)",6619
+66192,5,Corporate finance advisory services,6619
+66193,5,Clearing and settlement of financial instruments,6619
+66194,5,Activities auxiliary to fund management activities (e.g. independent fund administration firms),6619
+66195,5,Transaction/Payment processing services,6619
+66199,5,Other activities auxiliary to financial service activities n.e.c. (e.g. mortgage advisory firms),6619
+66210,5,"Risk and damage evaluation (e.g. loss adjusting, claims adjusting)",6621
+66221,5,Insurance agencies and agents (including financial planning services),6622
+66222,5,Insurance brokers,6622
+66291,5,Representative offices of foreign insurers and professional reinsurers,6629
+66292,5,Captive managers,6629
+66299,5,Other activities auxiliary to insurance and pension funding n.e.c. (e.g. activities of actuaries),6629
+66301,5,Traditional/Long-only asset/Portfolio management,6630
+66302,5,Hedge fund management,6630
+66303,5,Property fund management (including REIT management and direct property fund management),6630
+66304,5,Private equity firms,6630
+66305,5,Venture capital activities,6630
+66306,5,Single/Multiple family offices activities (e.g. managing investments and trusts for a single or multiple families),6630
+66307,5,Private debt funds,6630
+66309,5,Fund management activities n.e.c.,6630
+68101,5,Real estate developers,4100
+68101,5,Real estate developers,6810
+68102,5,Operating of serviced apartments,6810
+68103,5,"Letting of self-owned or leased real estate property except food courts, coffee shops and canteens (e.g. office/exhibition space, shopping mall, self-storage facilities)",6810
+68104,5,"Letting and operating of self-owned or leased food courts, coffee shops and canteens (with mainly rental income)",6810
+68105,5,Collective portfolio investment funds with rental income,6810
+68106,5,Management of self-owned strata titled property (i.e. Management Corporation Strata Title),6810
+68201,5,Real estate agencies and valuation services,6820
+68202,5,Town councils,6820
+68203,5,"Residential (other than town councils), commercial and industrial real estate management",6820
+68203,5,"Residential (other than town councils), commercial and industrial real estate management",8110
+68209,5,Real estate activities on a fee or commission basis n.e.c. (excluding online marketplaces),6820
+69101,5,Legal activities (excluding online marketplaces),6910
+69102,5,Arbitration and mediation services (excluding online marketplaces),6910
+69201,5,Accounting and auditing services (excluding online marketplaces),6920
+69202,5,Book-keeping services (excluding online marketplaces),6920
+70101,5,Activities of head and regional head offices; Centralised administrative offices and subsidiary management offices,7010
+70102,5,Business representative offices,7010
+70201,5,Management consultancy services,7020
+70202,5,Management consultancy services for healthcare organisations,7020
+70203,5,Management consultancy services for hotels,7020
+70204,5,Human resource consultancy services,7020
+70205,5,"Public relations, marketing and brand consultancy services",7020
+70206,5,"Port, shipping and maritime-related consultancy services",7020
+70209,5,Management consultancy services n.e.c.,7020
+71111,5,Architectural services,7110
+71112,5,Landscape design and landscape architecture,7110
+71113,5,Quantity surveying services,7110
+71114,5,Land surveying services,7110
+71119,5,"Other surveying services n.e.c. (e.g. geophysical, geologic, seismic, hydrographic surveying services)",7110
+71121,5,General building engineering design and consultancy services,7110
+71122,5,Process and industrial plant engineering design and consultancy services,7110
+71123,5,Engineering design and consultancy services in energy management and clean energy systems,7110
+71124,5,Environmental engineering design and consultancy services (except clean energy),7110
+71125,5,Infrastructure engineering design and consultancy services,7110
+71126,5,"Engineering design and consultancy services supporting mining, oil and gas extraction and offshore exploration activities",7110
+71129,5,Engineering design and consultancy activities n.e.c.,7110
+71200,5,Technical testing and analysis services (including certification of products and services),7120
+72101,5,Research and experimental development on biotechnology (excluding medical science),7210
+72102,5,Research and experimental development on electronics (excluding medical science),7210
+72103,5,Research and experimental development on chemicals (excluding medical science),7210
+72104,5,Research and experimental development on engineering,7210
+72105,5,Research and experimental development on environment and clean technologies (excluding biotechnology),7210
+72106,5,Research and experimental development on medical science,7210
+72109,5,Research and experimental development on natural sciences n.e.c.,7210
+72200,5,Research and experimental development on social sciences and humanities,7220
+73100,5,Advertising activities,7310
+73200,5,Market research and public opinion polling,7320
+74111,5,Electronics-related industrial design services,7410
+74112,5,Transport-related industrial design services,7410
+74113,5,Furniture design services,7410
+74119,5,Industrial design activities n.e.c.,7410
+74191,5,Interior design services,7410
+74192,5,Art and graphic design services,7410
+74193,5,Fashion (including accessories) design services,7410
+74194,5,Exhibition stand design services,7410
+74199,5,Other specialised design activities n.e.c.,7410
+74200,5,Photographic activities,7420
+74901,5,Translation services,7490
+74902,5,Brokerage and consultancy services of intellectual property assets,7490
+74903,5,Agrotechnology consultancy services,7490
+74904,5,Carbon consultancy services,7490
+74905,5,"Agents for artistes, athletes, models and other performers",7490
+74909,5,"Other professional, scientific and technical activities n.e.c.",7490
+75000,5,Veterinary activities,7500
+77101,5,Renting and leasing of private cars without driver (excluding online marketplaces),7710
+77102,5,Renting and leasing of bicycles and inline/roller skates,7721
+77109,5,Renting and leasing of land transport equipment (except cars) without driver n.e.c. (excluding online marketplaces),7710
+77210,5,Renting and leasing of recreational and sports goods,7721
+77220,5,Renting of VCDs and DVDs,7722
+77291,5,"Renting and leasing of furniture, utensils and electronic equipment for household use",7729
+77292,5,Renting of attire (e.g. costumes),7729
+77299,5,Renting and leasing of other personal and household goods n.e.c. (excluding online marketplaces),7729
+77310,5,Renting of water transport equipment without operator (e.g. commercial boats and ships without operator),7730
+77320,5,Renting of air transport equipment without operator (e.g. airplanes without operator),7730
+77330,5,Renting of construction and civil engineering machinery and equipment,7730
+77341,5,Renting of computers and peripheral equipment,7730
+77342,5,Renting of office machinery and equipment,7730
+77391,5,Renting and leasing of professional radio and television sets and sound reproducing and recording equipment,7730
+77392,5,Renting of industrial machinery and equipment,7730
+77399,5,"Renting of other machinery, equipment and tangible goods n.e.c. (excluding online marketplaces)",7730
+77400,5,"Leasing of non-financial intangible assets (e.g. patents, trade marks, brand names etc)",7740
+78101,5,IT manpower contracting services,7810
+78101,5,IT manpower contracting services,7820
+78102,5,Manpower contracting services (excluding IT manpower),7810
+78102,5,Manpower contracting services (excluding IT manpower),7820
+78103,5,Domestic worker employment placement agencies (excluding online marketplaces),7810
+78103,5,Domestic worker employment placement agencies (excluding online marketplaces),7820
+78104,5,Employment agencies (excluding domestic worker employment placement agencies and online marketplaces),7810
+78300,5,Management of human resource functions,7830
+79101,5,Travel agencies and tour operators (mainly inbound),7911
+79101,5,Travel agencies and tour operators (mainly inbound),7912
+79102,5,Travel agencies and tour operators (mainly outbound),7911
+79102,5,Travel agencies and tour operators (mainly outbound),7912
+79200,5,Timesharing service activities,7990
+80100,5,Private security activities,8010
+80100,5,Private security activities,8020
+80200,5,Detective and investigation activities,8030
+81211,5,"General cleaning services (including cleaning of public areas, offices and factories) except household cleaning and online marketplaces",8121
+81211,5,"General cleaning services (including cleaning of public areas, offices and factories) except household cleaning and online marketplaces",8129
+81212,5,Domestic/Household cleaning services (excluding online marketplaces),8121
+81291,5,Pest control services not in connection with agriculture,8129
+81292,5,"Cleaning of swimming pools, spas and fountains",8129
+81299,5,Other cleaning services n.e.c. (excluding online marketplaces),8129
+81300,5,"Landscape planting, care and maintenance service activities (e.g. garden installation and maintenance, grass cutting, tree felling, pruning)",8130
+82110,5,Office administrative services on a fee or contract basis (e.g. billing and record keeping),8211
+82191,5,Stenographic and secretarial services,8219
+82192,5,Duplicating and photo-copying services,8219
+82199,5,Other specialised office support activities n.e.c.,8219
+82200,5,Call centres,8220
+82301,5,Exhibition organisers,8230
+82302,5,Convention/Conference organisers,8230
+82303,5,Event/Concert organisers,8230
+82304,5,Exhibition stand contractors,8230
+82911,5,Debt collection services,8291
+82912,5,Credit rating agencies,8291
+82920,5,Packaging activities,8292
+82991,5,Activities of auction houses,4510
+82991,5,Activities of auction houses,4774
+82991,5,Activities of auction houses,4791
+82991,5,Activities of auction houses,4799
+82991,5,Activities of auction houses,8299
+82999,5,Other business support service activities (e.g. administration of loyalty programmes),8299
+84110,5,"Executive, legislative and other general public administration (e.g. Istana, parliament, tax authority)",8411
+84120,5,Public administration of economic and social programmes,8412
+84120,5,Public administration of economic and social programmes,8413
+84210,5,Foreign affairs,8421
+84221,5,Armed forces,8422
+84229,5,Defence activities n.e.c.,8422
+84231,5,Judiciary and related services,8423
+84232,5,Police,8423
+84233,5,Prisons,8423
+84234,5,"Other places of detention, correction and rehabilitation",8423
+84235,5,Civil defence,8423
+84239,5,Public order and safety activities n.e.c.,8423
+85101,5,Nurseries and kindergartens,8510
+85102,5,Primary schools,8510
+85211,5,Secondary schools including combined primary and secondary schools,8521
+85212,5,Junior colleges and centralised pre-university institutes (post-secondary non-tertiary) including combined secondary schools and post-secondary non-tertiary schools,8530
+85213,5,Commercial schools offering general secondary and post-secondary non-tertiary education programmes,8521
+85213,5,Commercial schools offering general secondary and post-secondary non-tertiary education programmes,8530
+85220,5,Technical and vocational secondary and post-secondary non-tertiary education,8522
+85230,5,International and foreign system schools,8510
+85230,5,International and foreign system schools,8521
+85230,5,International and foreign system schools,8530
+85240,5,Schools for special needs,8510
+85240,5,Schools for special needs,8521
+85240,5,Schools for special needs,8530
+85250,5,Specialised education schools,8521
+85250,5,Specialised education schools,8530
+85301,5,Polytechnics,8530
+85302,5,Universities,8530
+85303,5,Teachers' training institute,8530
+85304,5,Commercial schools offering higher education programmes,8530
+85401,5,"Training courses for construction, real estate, security and investigation services, cleaning, landscaping, waste management and pest management",8549
+85402,5,"Training courses for healthcare, education, community and social services",8549
+85403,5,"Training courses for food and beverage, retail and accommodation, tour operators, travel agencies & travel-related reservation services",8549
+85404,5,Training courses for manufacturing,8549
+85405,5,"Training courses for information and communications, finance and professional services",8549
+85406,5,"Training courses for wholesale trade, logistics and transport",8549
+85407,5,Training courses for sports and games,8541
+85408,5,"Training courses for music, dancing, art, speech and drama",8542
+85409,5,Training courses n.e.c.,8549
+85501,5,Student recruitment agencies,8550
+85502,5,Examination and accreditation agencies for education services,8550
+85509,5,Educational support services n.e.c. (excluding online marketplaces),8550
+86101,5,Acute hospitals,8610
+86102,5,Community hospitals,8610
+86109,5,Other hospitals n.e.c. (e.g. psychiatric hospital),8610
+86201,5,Clinics and other general medical services (Western),8620
+86202,5,Clinics and other general medical services (Non-Western),8620
+86203,5,Specialised medical services (including day surgical centres),8620
+86204,5,Dental services,8620
+86901,5,Medical laboratories (e.g. blood analysis laboratories),8690
+86902,5,Medical diagnostic imaging centres (e.g. X-ray services),8690
+86903,5,Ambulance and medical evacuation services,8690
+86904,5,Home healthcare services,8690
+86905,5,Dialysis services,8690
+86909,5,Other health services n.e.c. (excluding online marketplaces),8690
+87010,5,Nursing and personal care facilities (including nursing homes and hospices),8710
+87021,5,Residential care services for the elderly (e.g. home for the aged),8730
+87022,5,"Residential care services for children (e.g. children’s homes, orphanages)",8790
+87029,5,Other residential care services n.e.c.,8720
+87029,5,Other residential care services n.e.c.,8790
+88101,5,"Social services for the elderly (e.g. befriender services, meal services, drop-in centres)",8810
+88102,5,Social services for persons with disabilities (e.g. day activity centres for people with disabilities),8810
+88911,5,Child care services for pre-school children (including infant care services),8890
+88912,5,"Child/Student care services for school-going children (e.g. before and after-school care centres, student care centres)",8890
+88913,5,"Social services for children and youths (e.g. youth outreach services, adoption services)",8890
+88919,5,"Social services without accommodation for children, youth and families n.e.c.",8890
+88920,5,Community development councils and grassroots organisations,8890
+88991,5,Job training and vocational rehabilitation services,8890
+88992,5,Charitable and other supporting activities aimed at humanitarian work,8890
+88999,5,Other social services without accommodation n.e.c.,8890
+90001,5,Production of live stage presentations,9000
+90002,5,Performing arts venue operation,9000
+90003,5,"Orchestras, musical bands, choirs and dance groups",9000
+90009,5,"Dramatic arts, music and other arts production-related activities n.e.c. (e.g. stage, lighting and sound services)",9000
+91010,5,Libraries and archives activities,9101
+91021,5,Museums,9102
+91029,5,"Preservation of historical sites, buildings, artefacts and paintings, cultural villages and other related activities n.e.c.",9000
+91029,5,"Preservation of historical sites, buildings, artefacts and paintings, cultural villages and other related activities n.e.c.",9102
+91030,5,Botanical and zoological gardens and nature reserves activities,9103
+92001,5,Horse-racing and other betting activities,9200
+92002,5,Casinos,9200
+93111,5,Fitness centres and gymnasiums,9311
+93119,5,"Operation of sports facilities n.e.c. (e.g. bowling alleys, tennis centres, billiard halls, football stadium)",9311
+93120,5,Activities of sports clubs/associations and related activities,9312
+93120,5,Activities of sports clubs/associations and related activities,9319
+93201,5,Amusement theme parks,9321
+93202,5,"Game arcade, online game aggregator, LAN game operators and gaming centres",9329
+93203,5,"Night clubs, discotheques, dance clubs and karaoke lounges",9329
+93204,5,Recreation clubs (including country clubs),9329
+93209,5,Other amusement and recreation activities n.e.c. (including recreation parks/beaches and recreational fishing),9329
+94110,5,Activities of business and employers' membership organisations,9411
+94120,5,"Activities of professional membership organisations (e.g. medical associations, law societies, accountancy bodies)",9412
+94200,5,Activities of trade unions,9420
+94911,5,Churches,9491
+94912,5,Mosques,9491
+94913,5,Buddhist/Taoist temples,9491
+94914,5,Hindu/Sikh temples,9491
+94919,5,Activities of religious organisations n.e.c.,9491
+94920,5,Activities of political organisations,9492
+94991,5,"Philanthropic trusts, foundations and related activities",9499
+94992,5,"Ethnic associations (including clan associations, huay kuans)",9499
+94993,5,"Associations for hobbies, recreational, cultural and extra-curricular activities (e.g. scouts/girl guides association, book clubs and photo, music, art and craft clubs)",9499
+94994,5,"Student/Alumni bodies and related associations (e.g. parent-teacher associations, old boys' associations)",9499
+94995,5,Organisations for the protection of the environment and animals,9499
+94999,5,Activities of other membership organisations n.e.c.,9499
+95110,5,"Repair and maintenance of computer hardware, data processing equipment and computer peripherals",9511
+95120,5,Repair of communications equipment (e.g. mobile phones and fax machines),9512
+95210,5,"Repair of audio and video equipment (e.g. television sets, speakers and DVD players)",9521
+95220,5,"Repair of domestic electrical/electronic appliances except audio and video equipment (e.g. refrigerators, washing machines and room air-conditioners)",9522
+95230,5,Repair of footwear and leather goods,9523
+95240,5,"Repair and restoration of cabinets, furniture, upholstery, window shades and other fixtures",9524
+95291,5,Repair of bicycles and tricycles,9529
+95292,5,Repair of watches and clocks,9529
+95293,5,Repair of jewellery,9529
+95299,5,Repair of other personal and household goods n.e.c. (excluding online marketplaces),9529
+95301,5,Repair and maintenance of motor vehicles (including installation of parts & accessories),4520
+95301,5,Repair and maintenance of motor vehicles (including installation of parts & accessories),4540
+95302,5,Car washing and related services,4520
+95302,5,Car washing and related services,4540
+95303,5,Vehicle inspection and valuation services,4520
+95303,5,Vehicle inspection and valuation services,4540
+96011,5,Laundry and dry cleaning services except self-operated laundries,9601
+96012,5,Self-operated laundries,9601
+96021,5,Hairdressing salons/shops (including barber shops),9602
+96022,5,"Beauty salons and spas (including slimming, skin care and hair care centres)",9609
+96023,5,Manicure and pedicure services,9609
+96024,5,Massage parlours and foot reflexology,9609
+96029,5,Beauty and other personal care services n.e.c. (excluding online marketplaces),9609
+96030,5,"Funeral and related activities (including embalming, cremating and cemetery services, upkeep of cemeteries)",9603
+96040,5,Wedding and related activities (including bridal studios and wedding planners),9609
+96091,5,"Friendship, match-making and dating services",9609
+96092,5,Social escort services,9609
+96093,5,"Astrology, palmistry and other fortune telling services",9609
+96094,5,Training of pets and animals,9609
+96095,5,Care services for pets and animals,9609
+96099,5,Other personal service activities n.e.c. (excluding online marketplaces),9609
+97001,5,Activities of households as employers of domestic workers,9700
+97002,5,Activities of households as employers of other domestic personnel (e.g. housekeepers),9700
+99010,5,Foreign embassies and trade representative offices,9900
+99020,5,Foreign armed forces,9900
+99090,5,Other extra-territorial organisations and bodies,9900
+-,1,-,170
+-,1,-,8430
+-,1,-,9810
+-,1,-,9820

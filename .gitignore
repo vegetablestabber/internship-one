@@ -1,5 +1,6 @@
 .ipynb_checkpoints/
 .env
+__pycache__/
+
 Chuan Fu/
 data/*copy*.xlsx
-localgpt_llama2

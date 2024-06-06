@@ -1,11 +1,12 @@
 # Skills
 
 - Python
-- Pandas
+    - Pandas
+    - Matplotlib
+    - spaCy
 - Git
 - GitHub
 - Natural language processing
-- spaCy
 - PowerPoint
 
 # Week 0
@@ -43,3 +44,4 @@ Thoughts:
 
 - TODO: Change the comparison method for ISIC codes such that the respective ISIC code are looked up for a given NACE code.
 - TODO: Work on an overall metric of the model
+- Added a utilities folder for custom types, constants and functions
