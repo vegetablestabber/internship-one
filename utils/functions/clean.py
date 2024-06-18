@@ -62,7 +62,7 @@ def default_clean(df):
     # Replace newlines and multiple spaces with whitespaces
     # df.replace([r"\n", r" +"], " ", regex=True, inplace=True)
     
-    # Strip leading and trailing whitespaces
+    # Remove leading and trailing whitespaces
     df.loc[:, "Description":] = df.loc[:, "Description":].map(lambda x: x.strip() if isinstance(x, str) else x)
     
     # Replace 'and or' with 'or'
