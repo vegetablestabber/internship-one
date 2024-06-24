@@ -46,5 +46,23 @@
 
 ### Goals before meeting supervisors
 
+- Improve accuracy of the correspondence tables
+- Use Llama 3 to get better matches from Chuan Fu's correspondence tables for the MAESTRI dataset
 - Labelled dataset
-- 
+    = How do I make a labelled dataset?
+        - MAESTRI dataset: Company code, company keywords
+        - Correspondence table: Given code, possible codes
+    - How can someone use this labelled dataset?
+        - Find similar keywords
+
+## Week 7 (24/06/2024 - 28/06/2024)
+
+## Week 8 (01/07/2024 - 05/07/2024)
+
+## Week 9 (08/07/2024 - 12/07/2024)
+
+## Week 10 (15/07/2024 - 19/07/2024)
+
+## Week 11 (22/07/2024 - 26/07/2024)
+
+## Week 10 (29/07/2024 - 02/08/2024)
