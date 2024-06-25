@@ -10,14 +10,39 @@ def read_unformatted_inference():
         dfs[std] = []
         
         for path in paths:
-            if type(path) == str:
-                if ".xls" in path:
+            if isinstance(path, Path):
+                if ".xls" in path.suffix:
                     dfs[std].append(read_excel(path))
-                elif ".csv" in path:
+                elif ".csv" in path.suffix:
                     dfs[std].append(read_csv(path))
             elif type(path) == tuple:
-                if ".xls" in path[0]:
+                if ".xls" in path[0].suffix:
                     dfs[std].append(read_excel(path[0], sheet_name=path[1]))
+    
+    return dfs
+
+# Save data to new CSV files
+def export_inference(d: dict):
+    for std, df in d.items():
+        filepath = Path(INFERENCE_PATHS[std])  
+        filepath.parent.mkdir(parents=True, exist_ok=True)  
+
+        df.to_csv(filepath)
+
+def read_inference():
+    dfs = dict()
+    
+    for std, path in INFERENCE_PATHS.items():
+        # Reading from a cleaned CSV
+        df = read_csv(path)
+        
+        # Basic text processing for inferencing ISIC codes using NACE codes as indices
+        df["Code"] = df["Code"].str.replace(".", "")
+        df["Parent"] = df["Parent"].str.replace(".", "")
+        df = df.set_index("Code")
+        df = df.fillna("")
+
+        dfs[std] = df
     
     return dfs
 
@@ -46,28 +71,3 @@ def read_correspondence():
         dfs[std] = df
     
     return dfs
-
-def read_inference():
-    dfs = dict()
-    
-    for std, path in INFERENCE_PATHS.items():
-        # Reading from a cleaned CSV
-        df = read_csv(path)
-        
-        # Basic text processing for inferencing ISIC codes using NACE codes as indices
-        df["Code"] = df["Code"].str.replace(".", "")
-        df["Parent"] = df["Parent"].str.replace(".", "")
-        df = df.set_index("Code")
-        df = df.fillna("")
-
-        dfs[std] = df
-    
-    return dfs
-
-# Save data to new CSV files
-def export_inference(d: dict):
-    for std, df in d.items():
-        filepath = Path(INFERENCE_PATHS[std])  
-        filepath.parent.mkdir(parents=True, exist_ok=True)  
-
-        df.to_csv(filepath)
