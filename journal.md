@@ -57,6 +57,10 @@
 
 ## Week 7 (24/06/2024 - 28/06/2024)
 
+- 25 June: Extracted the info out for the LLM to go through
+    = Could filter out even further
+- 26 June: START doing LLM matching
+
 ## Week 8 (01/07/2024 - 05/07/2024)
 
 ## Week 9 (08/07/2024 - 12/07/2024)

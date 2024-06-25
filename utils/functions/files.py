@@ -1,12 +1,12 @@
 from pathlib import Path 
 from pandas import read_csv, read_excel
 
-from utils.constants import FILES
+from ..constants import UNFORMATTED_INFERENCE_PATHS, INFERENCE_PATHS, CORRESPONDENCE_INFO
 
-def read_data():
+def read_unformatted_inference():
     dfs = dict()
     
-    for std, paths in FILES["data"].items():
+    for std, paths in UNFORMATTED_INFERENCE_PATHS.items():
         dfs[std] = []
         
         for path in paths:
@@ -24,9 +24,9 @@ def read_data():
 def read_correspondence():
     # Read the MAESTRI dataset as a DataFrame
     dfs = dict()
-    filename = FILES["correspondence"]["path"]
+    filename = CORRESPONDENCE_INFO["path"]
 
-    for std, info in FILES["correspondence"]["std_info"].items():
+    for std, info in CORRESPONDENCE_INFO["stds"].items():
         sheet_name = info["sheet_name"]
         cols = {k: v for k, v in info["cols"].items() if v != None}
         
@@ -47,10 +47,10 @@ def read_correspondence():
     
     return dfs
 
-def read_exports():
+def read_inference():
     dfs = dict()
     
-    for std, path in FILES["exports"].items():
+    for std, path in INFERENCE_PATHS.items():
         # Reading from a cleaned CSV
         df = read_csv(path)
         
@@ -65,9 +65,9 @@ def read_exports():
     return dfs
 
 # Save data to new CSV files
-def export_dfs(d):
+def export_inference(d: dict):
     for std, df in d.items():
-        filepath = Path(FILES["exports"][std])  
+        filepath = Path(INFERENCE_PATHS[std])  
         filepath.parent.mkdir(parents=True, exist_ok=True)  
 
         df.to_csv(filepath)
