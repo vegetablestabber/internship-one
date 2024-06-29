@@ -49,8 +49,10 @@ def str_to_codes(str, std):
 
 # Evaluate similarity score based on NACE code and another standard code
 def similarity_score(code_str1: str, std1, code_str2: str, std2: IndustryStandard):
+    code_str1 = code_str1.strip()
+    code_str2 = code_str2.strip()
+
     blacklist = ["", "-"]
-    
     # print(f"String 1: {code_str1} ({std1.value}), String 2: {code_str2} ({std2.value})")
     
     # If code does not exist

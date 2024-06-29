@@ -76,4 +76,5 @@ CORRESPONDENCE_INFO = {
     }
 }
 
-DIFF_THRESHOLD = 5
+# Standard code difference threshold, 't'
+DIFF_THRESHOLD = 10

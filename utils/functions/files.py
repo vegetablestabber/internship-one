@@ -2,7 +2,7 @@ from pathlib import Path
 import pandas as pd
 
 from ..constants import STANDARDS, UNFORMATTED_INFERENCE_PATHS, INFERENCE_PATHS, CORRESPONDENCE_INFO, MAESTRI_PATH, MAESTRI_ROLES
-from .maestri import old_col, new_col, new_roles
+from .maestri import old_col, new_col, new_roles, old_desc_col, new_desc_col
 
 def read_unformatted_inference():
     dfs = dict()
@@ -80,7 +80,7 @@ def read_maestri():
     # Split the main dataset into DataFrames for each role (i.e., provider, intermediary, receiver)
     
     # Aggregate relevant column names for data validation
-    cols_list = [[old_col(std, role) for std in STANDARDS] for role in MAESTRI_ROLES]
+    cols_list = [[old_desc_col(role)] + [old_col(std, role) for std in STANDARDS] for role in MAESTRI_ROLES]
 
     # Obtain subsets within the original dataset for validation
     maestri_dfs = [df[cols].copy() for cols in cols_list]
@@ -90,18 +90,22 @@ def read_maestri():
         col_dict = dict()
         old_role = MAESTRI_ROLES[i]
         new_role = new_roles[i]
+
+        col_dict.update({old_desc_col(old_role): new_desc_col(new_role)})
         
         for std in STANDARDS:
             k = old_col(std, old_role)
             v = new_col(std, new_role)
             
             col_dict.update({k: v})
-        
+
         maestri_dfs[i] = maestri_dfs[i].rename(columns=col_dict)
         
         # Drop rows with null values for the NACE code
         # Source: https://stackoverflow.com/questions/29314033/drop-rows-containing-empty-cells-from-a-pandas-dataframe
         std = STANDARDS[i + 1]
         maestri_dfs[i] = maestri_dfs[i][   maestri_dfs[i][new_col(std, new_role)].astype(bool)   ]
+
+        maestri_dfs[i] = maestri_dfs[i].astype(str)
     
     return maestri_dfs
