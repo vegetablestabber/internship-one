@@ -27,8 +27,15 @@ INFERENCE_PATHS = {
     IndustryStandard.SSIC: EXPORTS_PATH / "inference/SSIC.csv"
 }
 
+CHUAN_FU_PATH = Path("../Chuan Fu")
+
+MAESTRI_PATH = (DATA_PATH / "Exchanges-database Maestri.xlsx", "MAESTRI")
+
+# Roles of companies in industrial symbiosis
+MAESTRI_ROLES = ("Providing", "Intermediate", "Receiving")
+
 CORRESPONDENCE_INFO = {
-    "path": "../Chuan Fu/Standardized codes and corresponding tables - trimmed.xlsx",
+    "path": CHUAN_FU_PATH / "Standardized codes and corresponding tables - trimmed.xlsx",
     "stds": {
         IndustryStandard.NACE: {
             "sheet_name": "NACE - ISIC - SSIC - WZ",
