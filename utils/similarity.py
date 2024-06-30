@@ -9,10 +9,13 @@ get_similarity_col = lambda std: f"{std.value} code sim. score"
 # Ensure the strings are of comparable length
 def comparable_codes(lst: list[IndustryCode]):
     min_len = min([len(code.value) for code in lst])
-    return [IndustryCode(code.std, code.value[:min_len]) for code in lst]
+    return [IndustryCode(code.std, code.value[:min_len]) if code != None else None for code in lst]
 
 # Compare two codes
 def compare(code1: IndustryCode, code2: IndustryCode):
+    if code1 == None or code2 == None:
+        return -1
+
     if code1 != code2:
         if code1.value[0] != code2.value[0]:
             diff = abs(int(code1.value) - int(code2.value))
@@ -42,13 +45,13 @@ def compare_many(codes1, codes2):
     return str(sum(scores) / len(scores))
 
 # Split the text by either ';' or ','
-def str_to_codes(str, std):
-    if ";" in str:
-        return [IndustryCode(std, substr) for substr in str.split(";")]
-    elif "," in str:
-        return [IndustryCode(std, substr) for substr in str.split(",")]
+def str_to_codes(string, std):
+    if ";" in string:
+        return [IndustryCode(std, substr) for substr in string.split(";")]
+    elif "," in string:
+        return [IndustryCode(std, substr) for substr in string.split(",")]
     
-    return [IndustryCode(std, str)]
+    return [IndustryCode(std, string)]
 
 # Evaluate similarity score based on NACE code and another standard code
 def get_similarity(code_str1: str, std1, code_str2: str, std2: IndustryStandard):
@@ -60,7 +63,7 @@ def get_similarity(code_str1: str, std1, code_str2: str, std2: IndustryStandard)
     
     # If code does not exist
     if code_str1 in blacklist or code_str2 in blacklist:
-        return 0
+        return -1
  
     std1_codes = str_to_codes(code_str1, std1)
     std2_codes = str_to_codes(code_str2, std2)
@@ -72,4 +75,4 @@ def get_similarity(code_str1: str, std1, code_str2: str, std2: IndustryStandard)
     elif len(std1_codes) == 1 and len(std2_codes) > 1:
         return compare_one_to_many(std1_codes[0], std2_codes)
     
-    return ""
+    return -2
