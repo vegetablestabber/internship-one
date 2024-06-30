@@ -1,5 +1,8 @@
-from ..types import IndustryStandard, IndustryCode
-from ..constants import DIFF_THRESHOLD
+from .types import IndustryStandard, IndustryCode
+from .constants import DIFF_THRESHOLD
+
+# Obtain column name for similarity score, given ICS and company role
+get_similarity_col = lambda std: f"{std.value} code sim. score"
 
 # ASSUMPTION: If the difference of codes of the same level is within a given threshold, then they are equal.
 
@@ -48,7 +51,7 @@ def str_to_codes(str, std):
     return [IndustryCode(std, str)]
 
 # Evaluate similarity score based on NACE code and another standard code
-def similarity_score(code_str1: str, std1, code_str2: str, std2: IndustryStandard):
+def get_similarity(code_str1: str, std1, code_str2: str, std2: IndustryStandard):
     code_str1 = code_str1.strip()
     code_str2 = code_str2.strip()
 
