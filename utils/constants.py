@@ -16,4 +16,4 @@ CHUAN_FU_PATH = Path("../Chuan Fu")
 STANDARDS = [std for std in IndustryStandard]
 
 # Standard code difference threshold, 't'
-DIFF_THRESHOLD = 30
+DIFF_THRESHOLD = 20

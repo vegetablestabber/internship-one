@@ -1,6 +1,7 @@
 from pandas import read_excel
-from .types import IndustryStandard
+
 from .constants import CHUAN_FU_PATH
+from .types import IndustryStandard
 
 CORRESPONDENCE_PATH = CHUAN_FU_PATH / "Standardized codes and corresponding tables - trimmed.xlsx"
 

@@ -1,5 +1,6 @@
-from .types import IndustryStandard, IndustryCode
-from .constants import DIFF_THRESHOLD
+from ..constants import DIFF_THRESHOLD
+from ..types import IndustryCode, IndustryStandard
+from ..inference.infer import select_cell
 
 # Obtain column name for similarity score, given ICS and company role
 get_similarity_col = lambda std: f"{std.value} code sim. score"
@@ -13,19 +14,19 @@ def comparable_codes(lst: list[IndustryCode]):
 
 # Compare two codes
 def compare(code1: IndustryCode, code2: IndustryCode):
-    if code1 == None or code2 == None:
+    if code1 == None or code1.value == "" or code2 == None or code2.value == "":
         return -1
 
-    if code1 != code2:
-        if code1.value[0] != code2.value[0]:
-            diff = abs(int(code1.value) - int(code2.value))
-            return 1 if diff <= DIFF_THRESHOLD else 0
+    if code1.std == IndustryStandard.NACE and code2.std == IndustryStandard.ISIC:
+        return 1 if select_cell(code1, "ISIC code") == code2.value else 0
+    elif code2.std == IndustryStandard.NACE and code1.std == IndustryStandard.ISIC:
+        return 1 if select_cell(code2, "ISIC code") == code1.value else 0
 
-        # print("{0:<4} {1:>5} <-> {2:<4} {3:>5}".format(code1.std.value, code1.value, code2.std.value, code2.value))
+    # print("{0:<4} {1:>5} <-> {2:<4} {3:>5}".format(code1.std.value, code1.value, code2.std.value, code2.value))
     
-    # if code1 != code2:
-    #     diff = abs(int(code1.value) - int(code2.value))
-    #     return 1 if diff <= DIFF_THRESHOLD else 0
+    if code1 != code2:
+        diff = abs(int(code1.value) - int(code2.value))
+        return 1 if diff <= DIFF_THRESHOLD else 0
     
     return 1
 
@@ -45,7 +46,7 @@ def compare_many(codes1, codes2):
     return str(sum(scores) / len(scores))
 
 # Split the text by either ';' or ','
-def str_to_codes(string, std):
+def str_to_codes(std, string):
     if ";" in string:
         return [IndustryCode(std, substr) for substr in string.split(";")]
     elif "," in string:
@@ -54,7 +55,7 @@ def str_to_codes(string, std):
     return [IndustryCode(std, string)]
 
 # Evaluate similarity score based on NACE code and another standard code
-def get_similarity(code_str1: str, std1, code_str2: str, std2: IndustryStandard):
+def calc_similarity(code_str1: str, std1, code_str2: str, std2: IndustryStandard):
     code_str1 = code_str1.strip()
     code_str2 = code_str2.strip()
 
@@ -75,4 +76,4 @@ def get_similarity(code_str1: str, std1, code_str2: str, std2: IndustryStandard)
     elif len(std1_codes) == 1 and len(std2_codes) > 1:
         return compare_one_to_many(std1_codes[0], std2_codes)
     
-    return -2
+    return -1
