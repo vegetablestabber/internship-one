@@ -24,7 +24,9 @@ MAESTRI_DESC_COL = "Company description"
 
 NON_NACE_STDS = [std for std in STANDARDS if std != IndustryStandard.NACE]
 
-def read_maestri():
+simplify_nace_str = lambda string: string.split(",")[0] if "," in string else string.split(";")[0]
+
+def load_maestri():
     # Importing the dataset
     
     # Read the MAESTRI dataset as a DataFrame
@@ -67,6 +69,8 @@ def read_maestri():
         # Drop rows with null values for the NACE code
         # Source: https://stackoverflow.com/questions/29314033/drop-rows-containing-empty-cells-from-a-pandas-dataframe
         maestri_dfs[i] = maestri_dfs[i][   maestri_dfs[i][nace_col].astype(bool)   ]
+
+        maestri_dfs[i][nace_col] = maestri_dfs[i][nace_col].map(simplify_nace_str)
 
         maestri_dfs[i] = maestri_dfs[i].set_index(MAESTRI_ID_COL)
     

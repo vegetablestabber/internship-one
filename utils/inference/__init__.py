@@ -1,7 +1,7 @@
 from ..constants import DATA_PATH, EXPORTS_PATH
 from ..types import IndustryStandard
 
-UNFORMATTED_INFERENCE_PATHS = {
+RAW_INFERENCE_PATHS = {
     IndustryStandard.ISIC: [DATA_PATH / "inference/ISIC Rev. 4.csv"],
     IndustryStandard.NACE: [DATA_PATH / "inference/NACE Rev. 2.xlsx"],
     IndustryStandard.WZ: [(DATA_PATH / "inference/WZ Issue 2008.xls", "Content")],

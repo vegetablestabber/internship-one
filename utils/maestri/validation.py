@@ -1,7 +1,9 @@
 from ..inference.infer import select_cell
 from ..types import IndustryStandard, NACECode
-from . import MAESTRI_ROLES, NON_NACE_STDS, get_maestri_code_col
+from . import (MAESTRI_DESC_COL, MAESTRI_ROLES, NON_NACE_STDS,
+               get_maestri_code_col)
 from .similarity import calc_similarity, get_similarity_col
+
 
 def get_similarity(nace_str: str, code_str2: str, std2: IndustryStandard):
     if std2 == IndustryStandard.ISIC:
@@ -37,7 +39,7 @@ def validate_maestri(dfs):
             df[similarity_col] = df[similarity_col].astype(float)
         
         # List containing new order of columns for readability
-        cols = [nace_col] + [f(std) for std in NON_NACE_STDS for f in (get_maestri_code_col, get_similarity_col)]
+        cols = [MAESTRI_DESC_COL, nace_col] + [f(std) for std in NON_NACE_STDS for f in (get_maestri_code_col, get_similarity_col)]
         
         # Reorder columns for readability
         results[i] = results[i][cols]

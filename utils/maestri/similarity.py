@@ -23,7 +23,7 @@ def compare(code1: IndustryCode, code2: IndustryCode):
         return 1 if select_cell(code2, "ISIC code") == code1.value else 0
 
     # print("{0:<4} {1:>5} <-> {2:<4} {3:>5}".format(code1.std.value, code1.value, code2.std.value, code2.value))
-    
+
     if code1 != code2:
         diff = abs(int(code1.value) - int(code2.value))
         return 1 if diff <= DIFF_THRESHOLD else 0
@@ -47,7 +47,9 @@ def compare_many(codes1, codes2):
 
 # Split the text by either ';' or ','
 def str_to_codes(std, string):
-    if ";" in string:
+    if string == "":
+        return []
+    elif ";" in string:
         return [IndustryCode(std, substr) for substr in string.split(";")]
     elif "," in string:
         return [IndustryCode(std, substr) for substr in string.split(",")]
@@ -66,8 +68,8 @@ def calc_similarity(code_str1: str, std1, code_str2: str, std2: IndustryStandard
     if code_str1 in blacklist or code_str2 in blacklist:
         return -1
  
-    std1_codes = str_to_codes(code_str1, std1)
-    std2_codes = str_to_codes(code_str2, std2)
+    std1_codes = str_to_codes(std1, code_str1)
+    std2_codes = str_to_codes(std2, code_str2)
     
     if len(std1_codes) == len(std2_codes):
         return compare_many(std1_codes, std2_codes)

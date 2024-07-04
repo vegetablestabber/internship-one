@@ -2,12 +2,12 @@ from pathlib import Path
 
 from pandas import read_csv, read_excel
 
-from . import INFERENCE_PATHS, UNFORMATTED_INFERENCE_PATHS
+from . import INFERENCE_PATHS, RAW_INFERENCE_PATHS
 
-def read_unformatted_inference():
+def load_raw_inference():
     dfs = dict()
     
-    for std, paths in UNFORMATTED_INFERENCE_PATHS.items():
+    for std, paths in RAW_INFERENCE_PATHS.items():
         dfs[std] = []
         
         for path in paths:
@@ -22,7 +22,7 @@ def read_unformatted_inference():
     
     return dfs
 
-def read_inference():
+def load_inference():
     dfs = dict()
     
     for std, path in INFERENCE_PATHS.items():

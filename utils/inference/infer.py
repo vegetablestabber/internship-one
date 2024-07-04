@@ -1,7 +1,9 @@
-from ..types import IndustryCode, IndustryStandard
-from .imports import read_inference
+from pandas import Series
 
-INFERENCE_DFS = read_inference()
+from ..types import IndustryCode, IndustryStandard
+from .load import load_inference
+
+INFERENCE_DFS = load_inference()
 
 def select_series(code: IndustryCode):
     df = INFERENCE_DFS[code.std]
@@ -9,7 +11,7 @@ def select_series(code: IndustryCode):
     if code.value in df.index:
         return df.loc[code.value]
 
-    return None
+    return Series([])
 
 def select_cell(code: IndustryCode, col: str) -> str:
     df = INFERENCE_DFS[code.std]
@@ -24,6 +26,7 @@ get_level = lambda code: select_cell(code, "Level")
 get_description = lambda code: select_cell(code, "Description")
 
 def get_parent(code: IndustryCode, level=-1):
+    std = code.std
     l = get_level(code)
 
     if level >= l:
@@ -33,15 +36,16 @@ def get_parent(code: IndustryCode, level=-1):
 
     # Level == -1 (immediate parent)
     if level == -1:
-        return IndustryCode(code.std, v)
+        return IndustryCode(std, v)
     
     while l > level:
         l = get_level(code)
 
         if l != level:
             v = select_cell(code, "Parent")
+            code = IndustryCode(std, v)
     
-    return IndustryCode(code.std, v)
+    return IndustryCode(std, v)
 
 def get_children(code: IndustryCode):
     df = INFERENCE_DFS[code.std]

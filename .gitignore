@@ -1,5 +1,6 @@
-.ipynb_checkpoints/
 .env
+.vscode
+.ipynb_checkpoints/
 __pycache__/
 
 Chuan Fu/
