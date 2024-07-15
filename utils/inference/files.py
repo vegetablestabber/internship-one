@@ -1,10 +1,18 @@
 from pathlib import Path
 
-from pandas import read_csv, read_excel
+from pandas import DataFrame, read_csv, read_excel
+
+from utils.types import IndustryStandard
 
 from . import INFERENCE_PATHS, RAW_INFERENCE_PATHS
 
-def load_raw_inference():
+def load_raw_inference() -> dict[IndustryStandard, list[DataFrame]]:
+    """Load the raw industry classification standard inference tables as DataFrames.
+
+    Returns:
+        dict[IndustryStandard, list[DataFrame]]: Dictionary containing the raw inference tables.
+    """
+
     dfs = dict()
     
     for std, paths in RAW_INFERENCE_PATHS.items():
@@ -22,7 +30,13 @@ def load_raw_inference():
     
     return dfs
 
-def load_inference():
+def load_inference() -> dict[IndustryStandard, DataFrame]:
+    """Load the industry classification standard inference tables as DataFrames.
+
+    Returns:
+        dict[IndustryStandard, DataFrame]: Dictionary containing the inference tables.
+    """
+
     dfs = dict()
     
     for std, path in INFERENCE_PATHS.items():
@@ -38,3 +52,16 @@ def load_inference():
         dfs[std] = df
     
     return dfs
+
+def export_inference_to_csv(dfs: list[DataFrame]):
+    """Export industry classification standard inference DataFrames to CSV files.
+
+    Args:
+        dfs (list[DataFrame]): Industry classification standard inference DataFrames.
+    """
+
+    for std, df in dfs.items():
+        filepath = Path(INFERENCE_PATHS[std])  
+        filepath.parent.mkdir(parents=True, exist_ok=True)  
+
+        df.to_csv(filepath)

@@ -1,19 +1,16 @@
-from ..constants import DIFF_THRESHOLD
+from .. import DIFF_THRESHOLD
 from ..types import IndustryCode, IndustryStandard
 from ..inference.infer import select_cell
 
-# Obtain column name for similarity score, given ICS and company role
-get_similarity_col = lambda std: f"{std.value} code sim. score"
-
-# ASSUMPTION: If the difference of codes of the same level is within a given threshold, then they are equal.
+### ASSUMPTION: If the difference of codes of the same level is within a given threshold, then they are equal.
 
 # Ensure the strings are of comparable length
-def comparable_codes(lst: list[IndustryCode]):
+def comparable_codes(lst: list[IndustryCode]) -> list[IndustryCode]:
     min_len = min([len(code.value) for code in lst])
     return [IndustryCode(code.std, code.value[:min_len]) if code != None else None for code in lst]
 
 # Compare two codes
-def compare(code1: IndustryCode, code2: IndustryCode):
+def compare(code1: IndustryCode, code2: IndustryCode) -> int:
     if code1 == None or code1.value == "" or code2 == None or code2.value == "":
         return -1
 
@@ -31,33 +28,33 @@ def compare(code1: IndustryCode, code2: IndustryCode):
     return 1
 
 # Compare a code with a list of codes
-def compare_one_to_many(code1: IndustryCode, codes):
+def compare_one_to_many(code1: IndustryCode, codes: list[IndustryCode]) -> float:
     codes = comparable_codes([code1, *codes])[1:]
     scores = [compare(code1, code) for code in codes]
     
-    return str(sum(scores) / len(scores))
+    return sum(scores) / len(scores)
 
 # Compare a list of codes with another list of codes
-def compare_many(codes1, codes2):
+def compare_many(codes1: list[IndustryCode], codes2: list[IndustryCode]) -> float:
     lst = [comparable_codes([code1, code2]) for code1, code2 in zip(codes1, codes2)]
     lst = [tuple(l) for l in lst]
     
     scores = [compare(code1, code2) for code1, code2 in lst]
-    return str(sum(scores) / len(scores))
+    return sum(scores) / len(scores)
 
 # Split the text by either ';' or ','
-def str_to_codes(std, string):
-    if string == "":
+def str_to_codes(std: IndustryStandard, text: str) -> list[IndustryCode]:
+    if text == "":
         return []
-    elif ";" in string:
-        return [IndustryCode(std, substr) for substr in string.split(";")]
-    elif "," in string:
-        return [IndustryCode(std, substr) for substr in string.split(",")]
+    elif ";" in text:
+        return [IndustryCode(std, substr) for substr in text.split(";")]
+    elif "," in text:
+        return [IndustryCode(std, substr) for substr in text.split(",")]
     
-    return [IndustryCode(std, string)]
+    return [IndustryCode(std, text)]
 
 # Evaluate similarity score based on NACE code and another standard code
-def calc_similarity(code_str1: str, std1, code_str2: str, std2: IndustryStandard):
+def calc_similarity(code_str1: str, std1, code_str2: str, std2: IndustryStandard) -> float:
     code_str1 = code_str1.strip()
     code_str2 = code_str2.strip()
 

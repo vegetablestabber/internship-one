@@ -1,9 +1,10 @@
-from pandas import read_excel
+from pandas import DataFrame, read_excel
 
-from .constants import CHUAN_FU_PATH
+from . import CHUAN_FU_PATH
 from .types import IndustryStandard
 
 CORRESPONDENCE_PATH = CHUAN_FU_PATH / "Standardized codes and corresponding tables - trimmed.xlsx"
+"""Path of the industry classification standard correspondence spreadsheet."""
 
 CORRESPONDENCE_SHEET_INFO = {
     IndustryStandard.NACE: {
@@ -43,8 +44,15 @@ CORRESPONDENCE_SHEET_INFO = {
         }
     }
 }
+"""Sheet names and column names of the industry classification standard correspondence spreadsheet."""
 
-def read_correspondence():
+def read_correspondence() -> list[DataFrame]:
+    """Load the industry classification standard correspondence spreadsheet as multiple DataFrames, each for a standard.
+
+    Returns:
+        list[DataFrame]: Industry classification standard correspondence DataFrames.
+    """
+
     # Read the MAESTRI dataset as a DataFrame
     dfs = dict()
 

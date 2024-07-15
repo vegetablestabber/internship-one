@@ -1,10 +1,22 @@
-# Insert the list of levels
-def insert_levels(df):
+from pandas import DataFrame
+
+def insert_levels(df: DataFrame):
+    """Insert a column for the levels of an industry classification standard.
+
+    Args:
+        df (DataFrame): Inference DataFrame for an industry classification standard.
+    """
+
     levels = df.index.str.len()
     df.insert(0, "Level", levels)
 
-# Insert the list of parents given an industry classification
-def insert_parents(df):
+def insert_parents(df: DataFrame):
+    """Insert a column for the parents of an industry classification standard.
+
+    Args:
+        df (DataFrame): Inference DataFrame for an industry classification standard.
+    """
+
     parents = []
     history = []
     prev = {"Level": 0, "Code": ""}
@@ -40,8 +52,13 @@ def insert_parents(df):
     # Insert the list as a column
     df.insert(1, "Parent", parents)
 
-# Usual string cleaning techniques
-def default_clean(df):
+def default_clean(df: DataFrame):
+    """Simple text cleaning for industry classification standard inference DataFrames.
+
+    Args:
+        df (DataFrame): Inference DataFrame for an industry classification standard.
+    """
+
     # Normalisation (lowercase strings)
     # lower = lambda x: x.lower() if isinstance(x, str) else x
     

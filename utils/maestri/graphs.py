@@ -1,35 +1,45 @@
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mtick
-from numpy import zeros
+import numpy as np
+from matplotlib.axis import Axis
+from pandas import DataFrame
 
-from ..constants import DIFF_THRESHOLD
-from ..stats import SCORE_CATEGORIES
+from utils import DIFF_THRESHOLD
+from utils.stats import SCORE_CATEGORIES
+from utils.types import IndustryStandard
+
 from . import MAESTRI_ROLES, NON_NACE_STDS
 from .stats import classify_scores_by_role, classify_scores_by_std
 
-#### Visualising similarity scores
-
-# Bar width for every plot
 BAR_WIDTH = 0.3
+"""Bar width for a similarity plot."""
 
-# List of named colours for matplotlib
-# Source: https://matplotlib.org/stable/gallery/color/named_colors.html
 BAR_COLOURS = {
     "s = -1": "lightgrey",
     "s = 0": "indianred",
     "0 < s < 1": "orange",
     "s = 1": "mediumseagreen"
 }
+"""
+List of named colours for matplotlib.
+Source: https://matplotlib.org/stable/gallery/color/named_colors.html
+"""
 
-##### By company role and industry classification standard
+def score_subplot(dfs: list[DataFrame], std: IndustryStandard, ax: Axis, is_percent: bool):
+    """Add a similarity subplot to an axis for an industry classification standard from all company roles within the MAESTRI dataset.
 
-# Create a subplot based on a given ICS
-def score_subplot(dfs, std, ax, is_percent):
+    Args:
+        dfs (list[DataFrame]): MAESTRI DataFrames.
+        std (IndustryStandard): Industry classification standard to compare.
+        ax (Axis): Axis to modify.
+        is_percent (bool): Choose percentage values if needed.
+    """
+
     # Obtain the dictionary with the breakdown of values by similarity score
     values_dict = classify_scores_by_role(dfs, std, is_percent)
     
     # Initial bar heights
-    bottom = zeros(len(NON_NACE_STDS))
+    bottom = np.zeros(len(NON_NACE_STDS))
     
     # Looping through each category ('s = 0', '0 < s < 1', 's = 1')
     for category, values in values_dict.items():
@@ -50,7 +60,14 @@ def score_subplot(dfs, std, ax, is_percent):
         # format the y-axis to be percentage values
         ax.yaxis.set_major_formatter(mtick.PercentFormatter(xmax=1))
 
-def plot_scores_by_role(dfs, is_percent=False):
+def plot_scores_by_role(dfs: list[DataFrame], is_percent=False):
+    """Create a similarity plot (with subplots by role) between NACE and non-NACE standards for the MAESTRI dataset.
+
+    Args:
+        dfs (list[DataFrame]): MAESTRI DataFrames.
+        is_percent (bool, optional): Choose percentage values if needed. Defaults to False.
+    """
+
     fig, axs = plt.subplots(ncols=len(NON_NACE_STDS))
 
     # Add subplots for each standard
@@ -69,10 +86,15 @@ def plot_scores_by_role(dfs, is_percent=False):
 
     plt.show()
 
-##### By industry classification standard
-
-# Create a subplot based on a given ICS
 def score_plot(dfs, ax, is_percent):
+    """Add a similarity subplot to an axis for an industry classification standard from all company roles within the MAESTRI dataset.
+
+    Args:
+        dfs (list[DataFrame]): MAESTRI DataFrames.
+        ax (Axis): Axis to modify.
+        is_percent (bool): Choose percentage values if needed.
+    """
+
     # x-axis values
     x = [std.value for std in NON_NACE_STDS]
     
@@ -80,7 +102,7 @@ def score_plot(dfs, ax, is_percent):
     values_dict = classify_scores_by_std(dfs, is_percent)
 
     # Initial bar heights
-    bottom = zeros(len(x))
+    bottom = np.zeros(len(x))
     
     # Looping through each category ('s = 0', '0 < s < 1', 's = 1')
     for category, values in values_dict.items():
@@ -95,7 +117,14 @@ def score_plot(dfs, ax, is_percent):
         # format the y-axis to be percentage values
         ax.yaxis.set_major_formatter(mtick.PercentFormatter(xmax=1))
 
-def plot_scores_by_std(dfs, is_percent=False):
+def plot_scores_by_std(dfs: list[DataFrame], is_percent=False):
+    """Create a similarity plot between NACE and non-NACE standards for the MAESTRI dataset.
+
+    Args:
+        dfs (list[DataFrame]): MAESTRI DataFrames.
+        is_percent (bool, optional): Choose percentage values if needed. Defaults to False.
+    """
+
     fig, ax = plt.subplots()
 
     # Add bars to the figure

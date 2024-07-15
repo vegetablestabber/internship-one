@@ -1,6 +1,10 @@
 import re
 
+from autocorrect import Speller
+
 from ..inference.infer import select_series
+
+_spell = Speller()
 
 def get_detailed_code_str(code):
 	series = select_series(code)
@@ -21,7 +25,7 @@ def get_detailed_code_str(code):
 	return None
 
 def get_detailed_company_str(company):
-	return f"Company description: {company.description}\n{get_detailed_code_str(company.code)}"
+	return f"Company description: {_spell(company.description)}\n{get_detailed_code_str(company.code)}"
 
 def get_match_prompt(company, to_codes):
 	from_std = company.code.std

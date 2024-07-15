@@ -1,12 +1,21 @@
 from pandas import Series
 
 from ..types import IndustryCode, IndustryStandard
-from .load import load_inference
+from .files import load_inference
 
-INFERENCE_DFS = load_inference()
+_inference_dfs = load_inference()
+ 
+def select_series(code: IndustryCode) -> Series:
+    """Select a certain row as a Series under an industry classification from its inference table.
+    
+    Args:
+        code (IndustryCode): Code for the industry classification.
 
-def select_series(code: IndustryCode):
-    df = INFERENCE_DFS[code.std]
+    Returns:
+        Series: Relevant row from the inference table pertaining to the industry classification.
+    """
+
+    df = _inference_dfs[code.std]
     
     if code.value in df.index:
         return df.loc[code.value]
@@ -14,18 +23,58 @@ def select_series(code: IndustryCode):
     return Series([])
 
 def select_cell(code: IndustryCode, col: str) -> str:
-    df = INFERENCE_DFS[code.std]
+    """Select a certain cell under an industry classification from its inference table.
+    
+    Args:
+        code (IndustryCode): Code for the industry classification.
+        col (str): Column to lookup.
+
+    Returns:
+        str: Relevant cell from the inference table pertaining to the industry classification.
+    """
+
+    df = _inference_dfs[code.std]
 
     if code.value in df.index:
         return df.loc[code.value, col]
 
     return None
 
-get_level = lambda code: select_cell(code, "Level")
+def get_level(code: IndustryCode) -> str:
+    """Get the level of an industry classification.
+    
+    Args:
+        code (IndustryCode): Code for the industry classification.
 
-get_description = lambda code: select_cell(code, "Description")
+    Returns:
+        str: Level of the industry classification.
+    """
 
-def get_parent(code: IndustryCode, level=-1):
+    return select_cell(code, "Level")
+
+def get_description(code: IndustryCode) -> str:
+    """Get the description of an industry classification.
+    
+    Args:
+        code (IndustryCode): Code for the industry classification.
+
+    Returns:
+        str: Description of the industry classification.
+    """
+
+    return select_cell(code, "Description")
+
+def get_parent(code: IndustryCode, level=-1) -> IndustryCode:
+    """Get the parent of an industry classification.
+    
+    Args:
+        code (IndustryCode): Code for the industry classification.
+        level (int): Level of the parent. Defaults to -1 for the immediate parent.
+
+    Returns:
+        str: Parent of the given industry classification.
+    """
+
     std = code.std
     l = get_level(code)
 
@@ -47,13 +96,31 @@ def get_parent(code: IndustryCode, level=-1):
     
     return IndustryCode(std, v)
 
-def get_children(code: IndustryCode):
-    df = INFERENCE_DFS[code.std]
+def get_children(code: IndustryCode) -> list[IndustryCode]:
+    """Get the children of an industry classification.
+
+    Args:
+        code (IndustryCode): Code for the industry classification.
+
+    Returns:
+        list[IndustryCode]: Children of the industry classification.
+    """
+
+    df = _inference_dfs[code.std]
     return [IndustryCode(code.std, value) for value in df[df["Parent"] == code.value].index]
 
-# Evaluate the highest common level (HCL)
-def get_common_parent(code: IndustryCode, other_std: IndustryStandard):
-    to_df = INFERENCE_DFS[other_std]
+def get_common_parent(code: IndustryCode, other_std: IndustryStandard) -> IndustryCode:
+    """Find the common parent of an industry classification with another standard.
+
+    Args:
+        code (IndustryCode): Code for the industry classfication standard.
+        other_std (IndustryStandard): Other standard from which to find the common parent.
+
+    Returns:
+        IndustryCode: Common parent from the other standard.
+    """
+
+    to_df = _inference_dfs[other_std]
     level = get_level(code)
     
     if level == 1:
@@ -62,9 +129,7 @@ def get_common_parent(code: IndustryCode, other_std: IndustryStandard):
     parent = get_parent(code)
     
     while parent.value not in to_df.index:
-        # print(std.value + ": " + c.value)
         parent = get_parent(parent)
-        # print(parent.value)
     
     parent = IndustryCode(other_std, parent.value)
 

@@ -1,33 +1,95 @@
-from pandas import ExcelWriter, read_excel
+from pandas import DataFrame, ExcelWriter, read_excel
 
-from ..constants import DATA_PATH, EXPORTS_PATH, STANDARDS
+from .. import DATA_PATH, EXPORTS_PATH, STANDARDS
 from ..types import IndustryStandard
 
 MAESTRI_PATH = (DATA_PATH / "Exchanges-database Maestri.xlsx", "MAESTRI")
+"""Path to the MAESTRI dataset and the name of the sheet to be analysed in  the file."""
 
-# Roles of companies in industrial symbiosis
 MAESTRI_ROLES = ("Providing", "Intermediate", "Receiving")
+"""Roles of companies in the MAESTRI dataset."""
 
 OLD_MAESTRI_ID_COL = "Database-ID"
+"""Old name of the identifier column for an exchange."""
 
 MAESTRI_ID_COL = "Database ID"
-
-# Obtain column name based on the imported MAESTRI dataset, given ICS and company role
-get_old_code_col = lambda std, role: f"{std.value} code - {role} industry"
-
-# Obtain concise column name, given ICS and company role
-get_maestri_code_col = lambda std: f"{std.value} code"
-
-get_old_desc_col = lambda role: f"{role} industry (according to original database)"
+"""Name of the identifier column for an exchange."""
 
 MAESTRI_DESC_COL = "Company description"
+"""Name of the column describing a company's activity."""
 
 NON_NACE_STDS = [std for std in STANDARDS if std != IndustryStandard.NACE]
+"""All industry classification standards except NACE."""
 
-simplify_nace_str = lambda string: string.split(",")[0] if "," in string else string.split(";")[0]
+def get_old_code_col(std: IndustryStandard, role: str) -> str:
+    """Obtain the old name of the column categorising companies using codes of an industry classification standard.
 
-def load_maestri():
-    # Importing the dataset
+    Args:
+        std (IndustryStandard): Industry classification standard to lookup.
+        role (str): Role of the companies.
+
+    Returns:
+        str: Old column name.
+    """
+
+    return f"{std.value} code - {role} industry"
+
+def get_old_desc_col(role: str) -> str:
+    """Obtain the old name of the column describing the activities of companies.
+
+    Args:
+        role (str): Role of the company.
+
+    Returns:
+        str: Column name.
+    """
+
+    return f"{role} industry (according to original database)"
+
+def get_maestri_code_col(std: IndustryStandard) -> str:
+    """Obtain the name of the column categorising companies using codes of an industry classification standard.
+
+    Args:
+        std (IndustryStandard): Industry classification standard to lookup.
+
+    Returns:
+        str: Column name.
+    """
+
+    return f"{std.value} code"
+
+def get_maestri_similarity_col(std: IndustryStandard) -> str:
+    """Obtain the name of the column for similarity scores.
+
+    Args:
+        std (IndustryStandard): Industry classification standard to lookup.
+
+    Returns:
+        str: Column name.
+    """
+
+    return f"{std.value} code sim. score"
+
+def simplify_nace_str(text: str) -> str:
+    """Remove extra NACE codes to simplify comparisons between other industry classification standards.
+
+    Args:
+        text (str): Text including possibly multiple NACE codes.
+
+    Returns:
+        str: Only the first code as a string.
+    """
+
+    return text.split(",")[0] if "," in text else text.split(";")[0]
+
+def load_maestri() -> list[DataFrame]:
+    """Load the MAESTRI dataset as multiple DataFrames.
+
+    Returns:
+        list[DataFrame]: List of DataFrames, each representing information about companies participating in different roles within industrial symbiosis.
+    """
+
+    ### Importing the dataset
     
     # Read the MAESTRI dataset as a DataFrame
     df = read_excel(MAESTRI_PATH[0], sheet_name=MAESTRI_PATH[1], dtype=str)
@@ -38,7 +100,7 @@ def load_maestri():
     # Remove carets, asterisks and hashes
     df.replace([r"\^|\*|#"], "", regex=True, inplace=True)
     
-    # Split the main dataset into DataFrames for each role (i.e., provider, intermediary, receiver)
+    ### Split the main dataset into DataFrames for each role (i.e., provider, intermediary, receiver)
     
     # Aggregate relevant column names for data validation
     cols_list = [[OLD_MAESTRI_ID_COL, get_old_desc_col(role)] + [get_old_code_col(std, role) for std in STANDARDS] for role in MAESTRI_ROLES]
@@ -46,9 +108,11 @@ def load_maestri():
     # Obtain subsets within the original dataset for validation
     maestri_dfs = [df[cols].copy() for cols in cols_list]
 
+    # "NACE code"
     nace_col = get_maestri_code_col(IndustryStandard.NACE)
 
-    # Rename columns within subsets
+    ### Rename columns within subsets
+    
     for i in range(len(MAESTRI_ROLES)):
         col_dict = dict()
         role = MAESTRI_ROLES[i]
@@ -76,8 +140,13 @@ def load_maestri():
     
     return maestri_dfs
 
-def export_maestri(dfs):
-    with ExcelWriter(f"{EXPORTS_PATH}/Exchanges-database Maestri_accuracy.xlsx") as writer:
+def export_maestri_to_excel(dfs: list[DataFrame]):
+    """Export the MAESTRI DataFrames to an Excel spreadsheet.
+
+    Args:
+        dfs (list[DataFrame]): MAESTRI DataFrames.
+    """
+    with ExcelWriter(f"{EXPORTS_PATH}/MAESTRI.xlsx") as writer:
         for i in range(len(dfs)):
             role = MAESTRI_ROLES[i]
             df = dfs[i]

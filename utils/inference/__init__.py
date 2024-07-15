@@ -1,4 +1,4 @@
-from ..constants import DATA_PATH, EXPORTS_PATH
+from .. import DATA_PATH, EXPORTS_PATH
 from ..types import IndustryStandard
 
 RAW_INFERENCE_PATHS = {
@@ -7,6 +7,7 @@ RAW_INFERENCE_PATHS = {
     IndustryStandard.WZ: [(DATA_PATH / "inference/WZ Issue 2008.xls", "Content")],
     IndustryStandard.SSIC: [DATA_PATH / "inference/SSIC 2020 v1.xlsx", DATA_PATH / "inference/SSIC 2020 v2.xlsx"]
 }
+"""Paths for the raw industry classification inference tables"""
 
 INFERENCE_PATHS = {
     IndustryStandard.ISIC: EXPORTS_PATH / "inference/ISIC.csv",
@@ -14,3 +15,7 @@ INFERENCE_PATHS = {
     IndustryStandard.WZ: EXPORTS_PATH / "inference/WZ.csv",
     IndustryStandard.SSIC: EXPORTS_PATH / "inference/SSIC.csv"
 }
+"""
+Paths for the formatted industry classification inference tables
+Note: Run 'notebooks/clean_inference.ipynb' to generate these files if not available
+"""
