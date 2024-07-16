@@ -1,10 +1,10 @@
 import numpy as np
 from pandas import DataFrame
 
-from utils.types import IndustryStandard
+from utils.industry import IndustryStandard
+from utils.stats import classify_scores, get_count, get_percent
 
-from ..stats import classify_scores, get_count, get_percent
-from . import NON_NACE_STDS, get_maestri_similarity_col
+from .. import NON_NACE_STDS, get_maestri_similarity_col
 
 def get_scores_by_role(dfs: list[DataFrame], std: IndustryStandard) -> list[np.array]:
     """Extract similarity scores by role between a given industry classification standard and NACE.

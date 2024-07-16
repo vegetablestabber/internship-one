@@ -2,11 +2,21 @@ import re
 
 from autocorrect import Speller
 
-from ..inference.infer import select_series
+from utils.industry import Company, IndustryCode
+from utils.inference.industry.infer import select_series
 
 _spell = Speller()
 
-def get_detailed_code_str(code):
+def get_detailed_code_str(code: IndustryCode) -> str | None:
+	"""Get a formatted string containing all information relevant to an industry classification.
+
+	Args:
+		code (IndustryCode): Code of the industry classification.
+
+	Returns:
+		str | None: Detailed description of the industry classification.
+	"""
+
 	series = select_series(code)
     
 	if not series.empty:
@@ -24,10 +34,29 @@ def get_detailed_code_str(code):
 
 	return None
 
-def get_detailed_company_str(company):
+def get_detailed_company_str(company: Company) -> str:
+	"""Get a formatted string containing the description of a company.
+
+	Args:
+		company (Company): Company whose description to format.
+
+	Returns:
+		str: Description of the company's business.
+	"""
+
 	return f"Company description: {_spell(company.description)}\n{get_detailed_code_str(company.code)}"
 
-def get_match_prompt(company, to_codes):
+def get_match_prompt(company: Company, to_codes: list[IndustryCode]) -> str:
+	"""Get a prompt to match a company to a list of suggested industry classifications.
+
+	Args:
+		company (Company): Company to be classified.
+		to_codes (list[IndustryCode]): Suggested list of industry classification codes.
+
+	Returns:
+		str: Formatted prompt.
+	"""
+
 	from_std = company.code.std
 	to_std = to_codes[0].std
 
@@ -47,4 +76,3 @@ def get_match_prompt(company, to_codes):
 		prompt += "\n\n" + get_detailed_code_str(code)
 
 	return prompt
-

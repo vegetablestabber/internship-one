@@ -1,13 +1,13 @@
 from enum import Enum
 
-# Industry classification standards (ICSs)
+# Industry classification standard object
 class IndustryStandard(Enum):
     NACE = "NACE"
     ISIC = "ISIC"
     WZ = "WZ"
     SSIC = "SSIC"
 
-# Industry classification codes
+# Industry classification code object
 class IndustryCode:
     def __init__(self, std: IndustryStandard, value: str):
         self.std = std
@@ -22,6 +22,8 @@ class IndustryCode:
     def __ne__(self, other):
         return not self.__eq__(other)
 
-class NACECode(IndustryCode):
-    def __init__(self, value):
-        super().__init__(IndustryStandard.NACE, value)
+# Company object
+class Company:
+    def __init__(self, code: IndustryCode, desc: str):
+        self.code = code
+        self.description = desc

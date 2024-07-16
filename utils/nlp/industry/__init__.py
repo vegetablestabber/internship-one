@@ -2,8 +2,9 @@ import json
 
 import ollama
 
-from ..inference.infer import get_children, get_common_parent, select_cell
-from ..types import IndustryCode, IndustryStandard
+from utils.industry import IndustryCode, IndustryStandard
+from utils.inference.industry.infer import get_children, get_common_parent, select_cell
+
 from .prompts import get_match_prompt
 
 _options = {"temperature": 0.2, "top_k": 10, "top_p": 0.5}
@@ -17,7 +18,6 @@ def query_llm(company, to_std, guesses):
 	# print(response)
 	# print(f"Given {from_code.std.value} code: {from_code.value}, matched {to_std.value} code: {response[to_std.value]}")
 
-	# return IndustryCode(to_std, "")
 	return IndustryCode(to_std, str(response[to_std.value]))
 
 def get_match(company, to_std, guesses):

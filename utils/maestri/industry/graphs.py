@@ -5,10 +5,10 @@ from matplotlib.axis import Axis
 from pandas import DataFrame
 
 from utils import DIFF_THRESHOLD
+from utils.industry import IndustryStandard
 from utils.stats import SCORE_CATEGORIES
-from utils.types import IndustryStandard
 
-from . import MAESTRI_ROLES, NON_NACE_STDS
+from .. import MAESTRI_ROLES, NON_NACE_STDS
 from .stats import classify_scores_by_role, classify_scores_by_std
 
 BAR_WIDTH = 0.3

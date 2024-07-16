@@ -1,7 +1,8 @@
 from pandas import Series
 
-from ..types import IndustryCode, IndustryStandard
-from .files import load_inference
+from utils.industry import IndustryCode, IndustryStandard
+
+from .io import load_inference
 
 _inference_dfs = load_inference()
  
@@ -22,7 +23,7 @@ def select_series(code: IndustryCode) -> Series:
 
     return Series([])
 
-def select_cell(code: IndustryCode, col: str) -> str:
+def select_cell(code: IndustryCode, col: str) -> str | None:
     """Select a certain cell under an industry classification from its inference table.
     
     Args:
@@ -30,7 +31,7 @@ def select_cell(code: IndustryCode, col: str) -> str:
         col (str): Column to lookup.
 
     Returns:
-        str: Relevant cell from the inference table pertaining to the industry classification.
+        str | None: Relevant cell from the inference table pertaining to the industry classification.
     """
 
     df = _inference_dfs[code.std]
@@ -40,31 +41,31 @@ def select_cell(code: IndustryCode, col: str) -> str:
 
     return None
 
-def get_level(code: IndustryCode) -> str:
+def get_level(code: IndustryCode) -> str | None:
     """Get the level of an industry classification.
     
     Args:
         code (IndustryCode): Code for the industry classification.
 
     Returns:
-        str: Level of the industry classification.
+        str | None: Level of the industry classification.
     """
 
     return select_cell(code, "Level")
 
-def get_description(code: IndustryCode) -> str:
+def get_description(code: IndustryCode) -> str | None:
     """Get the description of an industry classification.
     
     Args:
         code (IndustryCode): Code for the industry classification.
 
     Returns:
-        str: Description of the industry classification.
+        str | None: Description of the industry classification.
     """
 
     return select_cell(code, "Description")
 
-def get_parent(code: IndustryCode, level=-1) -> IndustryCode:
+def get_parent(code: IndustryCode, level=-1) -> IndustryCode | None:
     """Get the parent of an industry classification.
     
     Args:

@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from .types import IndustryStandard
+from .industry import IndustryStandard
 
 # Note: File paths are relative to the 'notebooks' folder, so this could break if used outside of the 'notebooks' folder.
 
