@@ -1,6 +1,6 @@
 from pandas import DataFrame, ExcelWriter, read_excel
 
-from utils import EXPORTS_PATH, STANDARDS
+from utils import EXPORTS_PATH
 from utils.industry import IndustryStandard
 
 from . import (MAESTRI_DESC_COL, MAESTRI_ID_COL, MAESTRI_PATH, MAESTRI_ROLES,
@@ -29,7 +29,7 @@ def load_maestri() -> list[DataFrame]:
     ### Split the main dataset into DataFrames for each role (i.e., provider, intermediary, receiver)
     
     # Aggregate relevant column names for data validation
-    cols_list = [[OLD_MAESTRI_ID_COL, get_old_desc_col(role)] + [get_old_code_col(std, role) for std in STANDARDS] for role in MAESTRI_ROLES]
+    cols_list = [[OLD_MAESTRI_ID_COL, get_old_desc_col(role)] + [get_old_code_col(std, role) for std in IndustryStandard] for role in MAESTRI_ROLES]
 
     # Obtain subsets within the original dataset for validation
     maestri_dfs = [df[cols].copy() for cols in cols_list]
@@ -48,7 +48,7 @@ def load_maestri() -> list[DataFrame]:
             get_old_desc_col(role): MAESTRI_DESC_COL
         })
         
-        for std in STANDARDS:
+        for std in IndustryStandard:
             k = get_old_code_col(std, role)
             v = get_maestri_code_col(std)
             
@@ -74,7 +74,7 @@ def export_maestri_to_excel(dfs: list[DataFrame], suffix=None):
         suffix (str | None, optional): Suffix to be added to the name of the exported file. Defaults to None.
     """
 
-    filename = EXPORTS_PATH / "MAESTRI" + {"_" + suffix if suffix != None else ""} + ".xlsx"
+    filename = EXPORTS_PATH / ("MAESTRI" + ("_" + suffix if suffix != None else "") + ".xlsx")
 
     with ExcelWriter(filename) as writer:
         for i in range(len(dfs)):

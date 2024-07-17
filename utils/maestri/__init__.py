@@ -1,4 +1,4 @@
-from utils import DATA_PATH, STANDARDS
+from utils import DATA_PATH
 from utils.industry import Company, IndustryCode, IndustryStandard
 
 class NACECode(IndustryCode):
@@ -24,7 +24,7 @@ MAESTRI_ID_COL = "Database ID"
 MAESTRI_DESC_COL = "Company description"
 """Name of the column describing a company's activity."""
 
-NON_NACE_STDS = [std for std in STANDARDS if std != IndustryStandard.NACE]
+NON_NACE_STDS = [std for std in IndustryStandard if std != IndustryStandard.NACE]
 """All industry classification standards except NACE."""
 
 def get_old_code_col(std: IndustryStandard, role: str) -> str:

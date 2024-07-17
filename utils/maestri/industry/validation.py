@@ -67,7 +67,9 @@ def validate_maestri_companies(dfs: list[DataFrame]) -> list[DataFrame]:
         cols = [MAESTRI_DESC_COL, nace_col] + [f(std) for std in NON_NACE_STDS for f in (get_maestri_code_col, get_maestri_similarity_col)]
         
         # Reorder columns for readability
-        results[i] = results[i][cols]
+        df = df[cols]
+
+        results.append(df)
     
     return results
 

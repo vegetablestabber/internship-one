@@ -1,7 +1,5 @@
 from pathlib import Path
 
-from .industry import IndustryStandard
-
 # Note: File paths are relative to the 'notebooks' folder, so this could break if used outside of the 'notebooks' folder.
 
 DIFF_THRESHOLD = 20
@@ -21,6 +19,3 @@ DATA_PATH = Path("../data")
 
 EXPORTS_PATH = Path("../exports")
 """Exports folder path."""
-
-STANDARDS = [std for std in IndustryStandard]
-"""Collection of industry standards."""
