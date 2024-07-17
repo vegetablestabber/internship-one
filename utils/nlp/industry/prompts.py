@@ -12,7 +12,7 @@ def get_detailed_code_str(code: IndustryCode, autocorrect=False) -> str | None:
 
 	Args:
 		code (IndustryCode): Code of the industry classification.
-		autocorrect (bool): Choose to autocorrect text. Defaults to False.
+		autocorrect (bool, optional): Choose to autocorrect text. Defaults to False.
 
 	Returns:
 		str | None: Detailed description of the industry classification.
@@ -40,7 +40,7 @@ def get_detailed_company_str(company: Company, autocorrect=False) -> str:
 
 	Args:
 		company (Company): Company whose description to format.
-		autocorrect (bool): Choose to autocorrect the company description. Defaults to False.
+		autocorrect (bool, optional): Choose to autocorrect the company description. Defaults to False.
 
 	Returns:
 		str: Description of the company's business.

@@ -70,7 +70,7 @@ def get_parent(code: IndustryCode, level=-1) -> IndustryCode | None:
     
     Args:
         code (IndustryCode): Code for the industry classification.
-        level (int): Level of the parent. Defaults to -1 for the immediate parent.
+        level (int, optional): Level of the parent. Defaults to -1 for the immediate parent.
 
     Returns:
         str: Parent of the given industry classification.

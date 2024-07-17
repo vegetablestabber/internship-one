@@ -71,7 +71,7 @@ def export_maestri_to_excel(dfs: list[DataFrame], suffix=""):
 
     Args:
         dfs (list[DataFrame]): MAESTRI DataFrames.
-        suffix (str): Suffix to be added to the exported file. Defaults to ''.
+        suffix (str, optional): Suffix to be added to the exported file. Defaults to ''.
     """
     with ExcelWriter(f"{EXPORTS_PATH}/MAESTRI_{suffix}.xlsx") as writer:
         for i in range(len(dfs)):
