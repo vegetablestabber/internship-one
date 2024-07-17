@@ -5,8 +5,8 @@ from utils.industry.similarity import compare_multiple
 
 from .. import (MAESTRI_DESC_COL, NON_NACE_STDS, NACECode,
                 get_maestri_code_col, get_maestri_similarity_col)
-from ..helpers import (codes_to_str, filter_codes_with_common_level_1_parent,
-                       str_to_codes)
+from ..helpers import (filter_industry_codes_with_common_level_1_parent,
+                       industry_codes_to_str, str_to_industry_codes)
 
 _blacklist = ["", "-"]
 
@@ -27,7 +27,7 @@ def calc_similarity(nace_text: str, other_text: str, other_std: IndustryStandard
         return -1
  
     nace_code = NACECode(nace_text.strip())
-    other_codes = str_to_codes(other_std, other_text.strip())
+    other_codes = str_to_industry_codes(other_std, other_text.strip())
     
     return compare_multiple(nace_code, other_codes)
 
@@ -91,8 +91,8 @@ def clear_dissimilar_maestri_industry_matches(dfs: list[DataFrame]) -> list[Data
             code_col = get_maestri_code_col(std)
             similarity_col = get_maestri_similarity_col(std)
 
-            df[code_col] = df.apply(lambda row: codes_to_str(
-                filter_codes_with_common_level_1_parent(NACECode(row[nace_col]), str_to_codes(std, row[code_col]))
+            df[code_col] = df.apply(lambda row: industry_codes_to_str(
+                filter_industry_codes_with_common_level_1_parent(NACECode(row[nace_col]), str_to_industry_codes(std, row[code_col]))
             ), axis=1)
 
             df.loc[df[similarity_col] < 1, code_col] = ""

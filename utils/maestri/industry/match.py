@@ -6,7 +6,7 @@ from utils.industry.match import classify_company
 
 from .. import (MAESTRI_DESC_COL, MAESTRI_ROLES, NON_NACE_STDS, NACECompany,
                 get_maestri_code_col)
-from ..helpers import str_to_codes
+from ..helpers import str_to_industry_codes
 
 def classify_maestri_companies(dfs: list[DataFrame]) -> list[DataFrame]:
     """Classify companies in the MAESTRI dataset from their NACE codes under non-NACE standards.
@@ -37,7 +37,7 @@ def classify_maestri_companies(dfs: list[DataFrame]) -> list[DataFrame]:
         for std in NON_NACE_STDS:
             code_col = get_maestri_code_col(std)
 
-            df[code_col] = df[code_col].map(lambda text: [code for code in str_to_codes(std, text)])
+            df[code_col] = df[code_col].map(lambda text: [code for code in str_to_industry_codes(std, text)])
 
             tqdm.pandas(desc=("{0:>" + str(l1) + "} companies: NACE -> {1:<" + str(l2) + "}").format(role, std.value))
 

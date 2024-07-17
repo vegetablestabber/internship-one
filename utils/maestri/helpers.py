@@ -13,7 +13,7 @@ def simplify_nace_str(text: str) -> str:
 
     return text.split(",")[0] if "," in text else text.split(";")[0]
 
-def str_to_codes(std: IndustryStandard, text: str) -> list[IndustryCode]:
+def str_to_industry_codes(std: IndustryStandard, text: str) -> list[IndustryCode]:
     """Convert a string from the MAESTRI dataset to a list of industry classification codes.
 
     Args:
@@ -33,7 +33,7 @@ def str_to_codes(std: IndustryStandard, text: str) -> list[IndustryCode]:
     
     return [IndustryCode(std, text)]
 
-def codes_to_str(codes: list[IndustryCode]) -> str:
+def industry_codes_to_str(codes: list[IndustryCode]) -> str:
     """Convert a list of industry classification codes to a string that is valid within the MAESTRI dataset.
 
     Args:
@@ -45,7 +45,7 @@ def codes_to_str(codes: list[IndustryCode]) -> str:
 
     return ";".join([c.value for c in codes])
 
-def filter_codes_with_common_level_1_parent(code: IndustryCode, codes: list[IndustryCode]) -> list[IndustryCode]:
+def filter_industry_codes_with_common_level_1_parent(code: IndustryCode, codes: list[IndustryCode]) -> list[IndustryCode]:
     """Filter industry classifications with a common level 1 parent.
 
     Args:
