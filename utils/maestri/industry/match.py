@@ -2,7 +2,7 @@ from pandas import DataFrame
 from tqdm import tqdm
 
 from utils.industry import IndustryStandard
-from utils.nlp.industry import get_match
+from utils.industry.match import classify_company
 
 from .. import (MAESTRI_DESC_COL, MAESTRI_ROLES, NON_NACE_STDS, NACECompany,
                 get_maestri_code_col)
@@ -41,7 +41,10 @@ def classify_maestri_companies(dfs: list[DataFrame]) -> list[DataFrame]:
 
             tqdm.pandas(desc=("{0:>" + str(l1) + "} companies: NACE -> {1:<" + str(l2) + "}").format(role, std.value))
 
-            df[code_col] = df.progress_apply(lambda row: get_match(NACECompany(row[nace_col], row[MAESTRI_DESC_COL]), std, row[code_col]).value, axis=1)
+            df[code_col] = df.progress_apply(lambda row:
+                classify_company(NACECompany(row[nace_col], row[MAESTRI_DESC_COL]), std, row[code_col]).value,
+                axis=1
+            )
 
             df[code_col] = df[code_col]
         
