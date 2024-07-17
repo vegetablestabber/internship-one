@@ -2,6 +2,9 @@
 .vscode
 .ipynb_checkpoints/
 __pycache__/
+node_modules
+package.json
+package-lock.json
 
 Chuan Fu/
 data/*copy*.xlsx
