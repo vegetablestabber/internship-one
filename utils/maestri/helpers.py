@@ -14,7 +14,7 @@ def simplify_nace_str(text: str) -> str:
     return text.split(",")[0] if "," in text else text.split(";")[0]
 
 def str_to_codes(std: IndustryStandard, text: str) -> list[IndustryCode]:
-    """Convert a string to industry classification codes from the MAESTRI dataset.
+    """Convert a string from the MAESTRI dataset to a list of industry classification codes.
 
     Args:
         std (IndustryStandard): Standard of industry classifications.
