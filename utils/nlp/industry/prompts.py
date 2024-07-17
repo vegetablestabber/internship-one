@@ -7,11 +7,12 @@ from utils.inference.industry.infer import select_series
 
 _spell = Speller()
 
-def get_detailed_code_str(code: IndustryCode) -> str | None:
+def get_detailed_code_str(code: IndustryCode, autocorrect=False) -> str | None:
 	"""Get a formatted string containing all information relevant to an industry classification.
 
 	Args:
 		code (IndustryCode): Code of the industry classification.
+		autocorrect (bool): Choose to autocorrect text. Defaults to False.
 
 	Returns:
 		str | None: Detailed description of the industry classification.
@@ -28,23 +29,24 @@ def get_detailed_code_str(code: IndustryCode) -> str | None:
 				text = re.sub(r"\s*\(\d+\.\d+(?:\,\s*\d+\.\d+)*\)", "", series[col])
 				text = text.replace("\n", "")
 				
-				string += f"{col}: {text}\n"
+				string += f"{col}: {_spell(text) if autocorrect else text}\n"
 						
 		return string.strip()
 
 	return None
 
-def get_detailed_company_str(company: Company) -> str:
+def get_detailed_company_str(company: Company, autocorrect=False) -> str:
 	"""Get a formatted string containing the description of a company.
 
 	Args:
 		company (Company): Company whose description to format.
+		autocorrect (bool): Choose to autocorrect the company description. Defaults to False.
 
 	Returns:
 		str: Description of the company's business.
 	"""
 
-	return f"Company description: {_spell(company.description)}\n{get_detailed_code_str(company.code)}"
+	return f"Company description: {_spell(company.description) if autocorrect else company.description}\n{get_detailed_code_str(company.code)}"
 
 def get_match_prompt(company: Company, to_codes: list[IndustryCode]) -> str:
 	"""Get a prompt to match a company to a list of suggested industry classifications.
@@ -70,7 +72,7 @@ def get_match_prompt(company: Company, to_codes: list[IndustryCode]) -> str:
 			 f" a JSON object with exactly two string key-value pairs: (1) key: '{from_std.value}', value: the given" \
 			 f" {from_std.value} code, (2) key: '{to_std.value}', value: the matched {to_std.value} code. Do NOT" \
 			 f" return any verbal information that was provided to assist in your task such as the description:" \
-			 f"\n\n{get_detailed_company_str(company)}"
+			 f"\n\n{get_detailed_company_str(company, autocorrect=True)}"
 
 	for code in to_codes:
 		prompt += "\n\n" + get_detailed_code_str(code)
