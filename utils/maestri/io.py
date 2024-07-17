@@ -66,14 +66,17 @@ def load_maestri() -> list[DataFrame]:
     
     return maestri_dfs
 
-def export_maestri_to_excel(dfs: list[DataFrame], suffix=""):
+def export_maestri_to_excel(dfs: list[DataFrame], suffix=None):
     """Export the MAESTRI DataFrames to an Excel spreadsheet.
 
     Args:
         dfs (list[DataFrame]): MAESTRI DataFrames.
-        suffix (str, optional): Suffix to be added to the exported file. Defaults to ''.
+        suffix (str | None, optional): Suffix to be added to the name of the exported file. Defaults to None.
     """
-    with ExcelWriter(f"{EXPORTS_PATH}/MAESTRI_{suffix}.xlsx") as writer:
+
+    filename = EXPORTS_PATH / "MAESTRI" + {"_" + suffix if suffix != None else ""} + ".xlsx"
+
+    with ExcelWriter(filename) as writer:
         for i in range(len(dfs)):
             role = MAESTRI_ROLES[i]
             df = dfs[i]
