@@ -2,13 +2,13 @@ from utils.industry import Company, IndustryCode, IndustryStandard
 from utils.inference.industry.infer import get_children, get_common_parent, select_cell
 from utils.nlp.industry import infer_industry_code_from_llm
 
-def classify_company(company: Company, to_std: IndustryStandard, guesses: list[IndustryCode]) -> IndustryCode:
+def classify_company(company: Company, to_std: IndustryStandard, guesses: list[IndustryCode]=[]) -> IndustryCode:
     """Classify a company that already has an industry classification under another standard.
 
     Args:
         company (Company): Company to be classified.
         to_std (IndustryStandard): The industry classification standard to classify the company.
-        guesses (list[IndustryCode]): Initial list of industry classification codes.
+        guesses (list[IndustryCode], optional): Initial list of industry classification codes. Defaults to [].
 
     Returns:
         IndustryCode: Code of the industry classification matched from the standard provided.
