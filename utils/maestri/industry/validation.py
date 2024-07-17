@@ -3,7 +3,7 @@ from pandas import DataFrame
 from utils.industry import IndustryStandard
 from utils.industry.similarity import compare_multiple
 
-from .. import (MAESTRI_DESC_COL, MAESTRI_ROLES, NON_NACE_STDS, NACECode,
+from .. import (MAESTRI_DESC_COL, NON_NACE_STDS, NACECode,
                 get_maestri_code_col, get_maestri_similarity_col)
 from ..helpers import (codes_to_str, filter_codes_with_common_level_1_parent,
                        str_to_codes)
@@ -41,14 +41,14 @@ def validate_maestri_companies(dfs: list[DataFrame]) -> list[DataFrame]:
         list[DataFrame]: MAESTRI DataFrames with similarity scores.
     """
 
-    results = [df.copy() for df in dfs]
+    results = []
 
     # NACE column, example: 'Provider NACE code'
     nace_col = get_maestri_code_col(IndustryStandard.NACE)
 
     # Loop through all company types
-    for i in range(len(MAESTRI_ROLES)):
-        df = results[i]
+    for i in range(len(dfs)):
+        df = dfs[i].copy()
         
         # Iterate through all standards except NACE as it is to be compared with
         for std in NON_NACE_STDS:
@@ -83,7 +83,7 @@ def clear_dissimilar_maestri_industry_matches(dfs: list[DataFrame]) -> list[Data
 
     results = []
 
-    for i in range(len(MAESTRI_ROLES)):
+    for i in range(len(dfs)):
         df = dfs[i].copy()
         nace_col = get_maestri_code_col(IndustryStandard.NACE)
 

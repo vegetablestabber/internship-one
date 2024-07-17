@@ -24,7 +24,7 @@ def classify_maestri_companies(dfs: list[DataFrame]) -> list[DataFrame]:
     l2 = len(max([std.value for std in NON_NACE_STDS], key=len))
 
     # Loop through all company types
-    for i in range(len(MAESTRI_ROLES)):
+    for i in range(len(dfs)):
         df = dfs[i].copy()
 
         # Role: either 'Providing', 'Intermediate' or 'Receiving'
