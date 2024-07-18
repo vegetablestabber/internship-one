@@ -1,25 +1,32 @@
 from pandas import DataFrame
 
-from utils import DATA_PATH, EXPORTS_PATH
 from utils.industry import IndustryStandard
 
+from .. import INFERENCE_EXPORTS_PATH, INFERENCE_PATH
+
+RAW_INDUSTRY_INFERENCE_FOLDER = INFERENCE_PATH / "industry"
+"""Path to the folder containing raw industry classification inference tables."""
+
 RAW_INDUSTRY_INFERENCE_PATHS = {
-    IndustryStandard.ISIC: [DATA_PATH / "inference/ISIC Rev. 4.csv"],
-    IndustryStandard.NACE: [DATA_PATH / "inference/NACE Rev. 2.xlsx"],
-    IndustryStandard.WZ: [(DATA_PATH / "inference/WZ Issue 2008.xls", "Content")],
-    IndustryStandard.SSIC: [DATA_PATH / "inference/SSIC 2020 v1.xlsx", DATA_PATH / "inference/SSIC 2020 v2.xlsx"]
+    IndustryStandard.ISIC: [RAW_INDUSTRY_INFERENCE_FOLDER / "ISIC Rev. 4.csv"],
+    IndustryStandard.NACE: [RAW_INDUSTRY_INFERENCE_FOLDER / "NACE Rev. 2.xlsx"],
+    IndustryStandard.WZ: [(RAW_INDUSTRY_INFERENCE_FOLDER / "WZ Issue 2008.xls", "Content")],
+    IndustryStandard.SSIC: [RAW_INDUSTRY_INFERENCE_FOLDER / "SSIC 2020 v1.xlsx", RAW_INDUSTRY_INFERENCE_FOLDER / "SSIC 2020 v2.xlsx"]
 }
-"""Paths for the raw industry classification inference tables"""
+"""Paths for the raw industry classification inference tables."""
+
+INDUSTRY_INFERENCE_FOLDER = INFERENCE_EXPORTS_PATH / "industry"
+"""Path to the folder containing exported industry classification inference tables."""
 
 INDUSTRY_INFERENCE_PATHS = {
-    IndustryStandard.ISIC: EXPORTS_PATH / "inference/ISIC.csv",
-    IndustryStandard.NACE: EXPORTS_PATH / "inference/NACE.csv",
-    IndustryStandard.WZ: EXPORTS_PATH / "inference/WZ.csv",
-    IndustryStandard.SSIC: EXPORTS_PATH / "inference/SSIC.csv"
+    IndustryStandard.ISIC: INDUSTRY_INFERENCE_FOLDER / "ISIC.csv",
+    IndustryStandard.NACE: INDUSTRY_INFERENCE_FOLDER / "NACE.csv",
+    IndustryStandard.WZ: INDUSTRY_INFERENCE_FOLDER / "WZ.csv",
+    IndustryStandard.SSIC: INDUSTRY_INFERENCE_FOLDER / "SSIC.csv"
 }
 """
-Paths for the formatted industry classification inference tables
-Note: Run 'notebooks/clean_inference.ipynb' to generate these files if not available
+Paths for the formatted industry classification inference tables.
+Note: Run 'notebooks/clean_inference.ipynb' to generate these files if not available.
 """
 
 def default_clean(df: DataFrame):

@@ -1,6 +1,59 @@
-from pandas import DataFrame
+from enum import Enum
+from pathlib import Path
+from typing import Any
 
-def insert_levels(df: DataFrame):
+import pandas as pd
+
+from utils import DATA_PATH, EXPORTS_PATH
+
+INFERENCE_PATH = DATA_PATH / "inference"
+"""Path to the folder containing inference data."""
+
+INFERENCE_EXPORTS_PATH = EXPORTS_PATH / "inference"
+"""Path to the folder containing exported inference data."""
+
+def load_raw_inference(paths: dict[Enum, Any]) -> dict[Enum, list[pd.DataFrame]]:
+    """Load raw inference tables as DataFrames.
+
+    Args:
+        paths (dict[Enum, Any]): Raw inference table paths.
+
+    Returns:
+        dict[Enum, list[DataFrame]]: Dictionary containing the raw inference tables.
+    """
+
+    dfs = dict()
+    
+    for std, paths in paths.items():
+        dfs[std] = []
+        
+        for path in paths:
+            if isinstance(path, Path):
+                if ".xls" in path.suffix:
+                    dfs[std].append(pd.read_excel(path, dtype=str))
+                elif ".csv" in path.suffix:
+                    dfs[std].append(pd.read_csv(path, dtype=str))
+            elif type(path) == tuple:
+                if ".xls" in path[0].suffix:
+                    dfs[std].append(pd.read_excel(path[0], sheet_name=path[1], dtype=str))
+    
+    return dfs
+
+def export_inference_to_csv(dfs: dict[Enum, pd.DataFrame], paths: dict[Enum, Any]):
+    """Export inference DataFrames to CSV files.
+
+    Args:
+        dfs (dict[Enum, DataFrame]): Inference DataFrames.
+        paths (dict[Enum, Any]): Paths to export the formatted inference tables.
+    """
+
+    for std, df in dfs.items():
+        filepath = Path(paths[std])  
+        filepath.parent.mkdir(parents=True, exist_ok=True)  
+
+        df.to_csv(filepath)
+
+def insert_levels(df: pd.DataFrame):
     """Insert a column for the levels of a classification standard.
 
     Args:
@@ -10,7 +63,7 @@ def insert_levels(df: DataFrame):
     levels = df.index.str.len()
     df.insert(0, "Level", levels)
 
-def insert_parents(df: DataFrame):
+def insert_parents(df: pd.DataFrame):
     """Insert a column for the parents of a classification standard.
 
     Args:

@@ -2,9 +2,9 @@ from pandas import Series
 
 from utils.industry import IndustryCode, IndustryStandard
 
-from .io import load_inference
+from .io import load_industry_inference
 
-_inference_dfs = load_inference()
+_inference_dfs = load_industry_inference()
  
 def select_series(code: IndustryCode) -> Series:
     """Select a certain row as a Series under an industry classification from its inference table.
