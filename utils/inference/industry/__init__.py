@@ -1,3 +1,5 @@
+from pandas import DataFrame
+
 from utils import DATA_PATH, EXPORTS_PATH
 from utils.industry import IndustryStandard
 
@@ -19,3 +21,36 @@ INDUSTRY_INFERENCE_PATHS = {
 Paths for the formatted industry classification inference tables
 Note: Run 'notebooks/clean_inference.ipynb' to generate these files if not available
 """
+
+def default_clean(df: DataFrame):
+    """Simple text cleaning for industry classification standard inference DataFrames.
+
+    Args:
+        df (DataFrame): Inference DataFrame for an industry classification standard.
+    """
+
+    # Normalisation (lowercase strings)
+    # lower = lambda x: x.lower() if isinstance(x, str) else x
+    
+    ## If the dataframe has ISIC code data
+    # if "ISIC code" in df:
+    #     if "Parent" in df:
+    #         df.iloc[:, 2:-1] = df.iloc[:, 2:-1].map(lower)
+    #     else:
+    #         df.iloc[:, 1:-1] = df.iloc[:, 1:-1].map(lower)
+        
+    ## If the dataframe doesnt' have ISIC code data
+    # else:
+    #     df.loc[:, "Description":] = df.loc[:, "Description":].map(lower)
+    
+    # Replace punctuation with empty strings
+    # df.loc[:, "Description":] = df.loc[:, "Description":].replace(r"[^\w\s]+", " ", regex=True)
+    
+    # Replace newlines and multiple spaces with whitespaces
+    # df.replace([r"\n", r" +"], " ", regex=True, inplace=True)
+    
+    # Remove leading and trailing whitespaces
+    df.loc[:, "Description":] = df.loc[:, "Description":].map(lambda x: x.strip() if isinstance(x, str) else x)
+    
+    # Replace 'and or' with 'or'
+    df.replace(r"and/or", "or", regex=True, inplace=True)
