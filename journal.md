@@ -14,7 +14,7 @@
 
 ## Week 2 (20/05/2024 - 24/05/2024)
 
-- Looked into building a RAG
+- Looked into retrieval-augmented generation (RAG)
 - Looked at the MAESTRI dataset
 
 ## Week 3 (27/05/2024 - 31/05/2024)
@@ -30,7 +30,7 @@
 
 ## Week 5 (10/06/2024 - 14/06/2024)
 
-- TODO: Change the comparison method for ISIC codes such that the respective ISIC code are looked up for a given NACE code.
+- TODO: Change the comparison method for ISIC codes such that the respective ISIC code is looked up for a given NACE code.
 - TODO: Work on an overall metric of the model
 - TODO: Add Jupyter notebooks to the 'notebooks' folder
 
@@ -63,11 +63,17 @@
 
 ## Week 8 (01/07/2024 - 05/07/2024)
 
+- Obtained good results
+
 ## Week 9 (08/07/2024 - 12/07/2024)
 
-- Added documentation
+- July 8: Presented my results at the monthly student sharing session
+- Code documentation
 
 ## Week 10 (15/07/2024 - 19/07/2024)
+
+- Code documentation
+- Code refactoring
 
 ## Week 11 (22/07/2024 - 26/07/2024)
 
