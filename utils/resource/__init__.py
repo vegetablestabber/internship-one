@@ -21,6 +21,6 @@ class ResourceCode:
 
 # Product object
 class Product:
-    def __init__(self, code: ResourceCode, desc: str):
-        self.code = code
+    def __init__(self, desc: str, code: ResourceCode=None):
         self.description = desc
+        self.code = code

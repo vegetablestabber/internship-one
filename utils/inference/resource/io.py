@@ -15,10 +15,9 @@ def load_resource_inference() -> dict[ResourceStandard, DataFrame]:
     
     for std, path in RESOURCE_INFERENCE_PATHS.items():
         # Reading from a cleaned CSV
-        df = read_csv(path)
-        
-        # Basic text processing for inferencing ISIC codes using NACE codes as indices
-        df = df.fillna("")
+        df = read_csv(path, dtype=str)
+
+        # df.Level = df.Level.astype("uint8")
         df = df.set_index("Code")
 
         dfs[std] = df

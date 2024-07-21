@@ -48,7 +48,7 @@ def get_detailed_company_str(company: Company, autocorrect=False) -> str:
 
 	return f"Company description: {_spell(company.description) if autocorrect else company.description}\n{get_detailed_code_str(company.code)}"
 
-def get_match_prompt(company: Company, to_codes: list[IndustryCode]) -> str:
+def get_industry_match_prompt(company: Company, to_codes: list[IndustryCode]) -> str:
 	"""Get a prompt to match a company to a list of suggested industry classifications.
 
 	Args:

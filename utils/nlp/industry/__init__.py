@@ -1,9 +1,9 @@
 from utils.industry import Company, IndustryCode, IndustryStandard
 
-from .. import infer_json_from_llm
-from .prompts import get_match_prompt
+from .. import query_json
+from .prompts import get_industry_match_prompt
 
-def infer_industry_code_from_llm(company: Company, to_std: IndustryStandard, guesses: list[IndustryCode]) -> IndustryCode:
+def query_industry_code(company: Company, to_std: IndustryStandard, guesses: list[IndustryCode]) -> IndustryCode:
 	"""Infer an industry classification for a company using a LLM.
 
 	Args:
@@ -15,10 +15,10 @@ def infer_industry_code_from_llm(company: Company, to_std: IndustryStandard, gue
 		IndustryCode: Code of the inferred industry classification from the standard provided.
 	"""
 
-	prompt = get_match_prompt(company, guesses)
+	prompt = get_industry_match_prompt(company, guesses)
 	# print("Prompt: " + prompt)
 
-	response = infer_json_from_llm(prompt)
+	response = query_json(prompt)
 	# print(response)
 	
 	# Example response:

@@ -4,7 +4,7 @@ import ollama
 
 from utils import LLM_ID, LLM_OPTIONS
 
-def infer_json_from_llm(prompt: str) -> dict:
+def query_json(prompt: str) -> dict:
     """Infer a JSON response using a LLM.
 
     Args:
