@@ -1,5 +1,3 @@
-from pathlib import Path
-
 from pandas import DataFrame, read_csv
 
 from utils.industry import IndustryStandard
