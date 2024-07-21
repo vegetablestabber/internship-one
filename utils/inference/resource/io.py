@@ -19,6 +19,7 @@ def load_resource_inference() -> dict[ResourceStandard, DataFrame]:
 
         # df.Level = df.Level.astype("uint8")
         df = df.set_index("Code")
+        df = df.fillna("")
 
         dfs[std] = df
     

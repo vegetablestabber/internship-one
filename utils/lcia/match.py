@@ -11,11 +11,12 @@ def find_products_for_companies(df: DataFrame) -> DataFrame:
 
     tqdm.pandas(desc="Finding CPC classifications")
 
-    df[cpc_col] = df.progress_apply(lambda row:
+    df[cpc_col] = df.apply(lambda row:
         find_product_classification(
             ISICCompany(row[isic_col], row["Company description"]),
             # Product(f"{row['Product name']} {row['Product description']}"),
-            Product(row["Product description"]),
+            # Product(row["Product description"]),
+            Product(row["Product name"]),
             ResourceStandard.CPC
         ).value,
         axis=1

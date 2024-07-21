@@ -26,6 +26,8 @@ def load_lcia() -> DataFrame:
     df["ISIC code"] = df["ISIC code"].map(lambda str: str.split(":")[0])
     df["CPC code"] = df["CPC code"].map(lambda str: str.split(":")[0])
 
+    # df[["Company description", "Product name", "Product description"]] = df[["Company description", "Product name", "Product description"]].replace(r"\n", " ", regex=True)
+
     # df = df.set_index("ID")
 
     return df

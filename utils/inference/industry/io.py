@@ -15,13 +15,14 @@ def load_industry_inference() -> dict[IndustryStandard, DataFrame]:
     
     for std, path in INDUSTRY_INFERENCE_PATHS.items():
         # Reading from a cleaned CSV
-        df = read_csv(path, dtype=str)
+        df = read_csv(path)
         
         # Basic text processing for inferencing ISIC codes using NACE codes as indices
         df.Code = df.Code.str.replace(".", "")
         # df.Level = df.Level.astype("uint8")
         df.Parent = df.Parent.str.replace(".", "")
         df = df.set_index("Code")
+        df = df.fillna("")
 
         dfs[std] = df
     
