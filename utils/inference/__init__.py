@@ -86,12 +86,12 @@ def insert_parents(df: pd.DataFrame):
             current_parent = ""
             history = [current_code]
             
-        ## If the current level is lower than the previous level
+        ## If the current level is higher than the previous level
         elif current_level > prev_level:
             current_parent = history[prev_level - 1]
             history.append(current_code)
             
-        ## If the current level is higher than the previous level
+        ## If the current level is lower than the previous level
         elif current_level < prev_level:
             current_parent = history[(current_level - 1) - 1]
             del history[current_level - 1:]
