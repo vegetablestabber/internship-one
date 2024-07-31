@@ -10,7 +10,7 @@ def find_product_classification(company: Company, product: Product, product_std:
     resource_dfs = load_resource_inference()
     inference_df = resource_dfs[product_std]
     
-    print(f"\n{get_detailed_company_str(company)}\n{get_detailed_product_str(product)}")
+    # print(f"\n{get_detailed_company_str(company)}\n{get_detailed_product_str(product)}")
 
     guesses = [ResourceCode(product_std, value) for value in inference_df[inference_df.Level == "1"].index]
     match = query_product_code_from_company(company, product, guesses)
