@@ -14,6 +14,8 @@ nlp = spacy.load("en_core_web_trf")
 # nlp = en_core_web_trf.load()
 
 def query_product_code_from_company(company: Company, product: Product, guesses: list[ResourceCode]) -> ResourceCode:
+    # Using Ollama
+    
     # prompt = get_product_match_from_company_prompt(company, product, guesses)
     # print("Prompt: " + prompt)
 
@@ -23,6 +25,8 @@ def query_product_code_from_company(company: Company, product: Product, guesses:
     # product_std = guesses[0].std
     
     # return ResourceCode(product_std, str(response[product_std.value]))
+    
+    # Using spaCy
     
     input_doc = nlp(company.description + " " + product.description)
     print(input_doc)

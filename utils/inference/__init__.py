@@ -2,7 +2,6 @@ from enum import Enum
 from pathlib import Path
 from typing import Any
 
-from numpy import dtype
 import pandas as pd
 
 from utils import DATA_PATH, EXPORTS_PATH

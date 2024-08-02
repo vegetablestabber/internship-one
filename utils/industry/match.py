@@ -1,11 +1,7 @@
 from utils.industry import Company, IndustryCode, IndustryStandard
 from utils.inference.industry.infer import (get_children, get_common_parent,
                                             select_cell)
-from utils.inference.resource.io import load_resource_inference
 from utils.nlp.industry import query_industry_code
-from utils.nlp.resource import query_product_code_from_company
-from utils.resource import Product, ResourceCode, ResourceStandard
-
 
 def classify_company(company: Company, to_std: IndustryStandard, guesses: list[IndustryCode]=[]) -> IndustryCode:
     """Classify a company that already has an industry classification under another standard.
