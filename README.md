@@ -29,7 +29,7 @@ ollama pull llama3
 # Usage
 
 1. First, run `notebooks/clean_inference.ipynb` to generate formatted classification inference files within the `exports` folder.
-2. To validate the preliminary results of matching industry classifications within the MAESTRI dataset by Dr Tan Chuan Fun, run `notebooks/validate_maestri.py`.
+2. To validate the preliminary results of matching industry classifications within the MAESTRI dataset by Dr Tan Chuan Fun, run `notebooks/validate_maestri.ipynb`.
 3. To validate the results from the new methodology implemented in this project, run `notebooks/match_maestri.ipynb`.
 
 # Data
