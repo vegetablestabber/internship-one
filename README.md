@@ -18,7 +18,7 @@ en_core_web_trf`
 - `numpy==1.26.4`
 - `tqdm==4.66.4`
 
-You can also copy the commands below to install the pre-requisites for this project:
+You can also copy the commands below to install the pre-requisites after cloning this project:
 
 ```
 pip install -r requirements.txt
