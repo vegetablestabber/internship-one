@@ -4,13 +4,12 @@
     - This project uses the default [spaCy](https://spacy.io) trained pipeline `en_core_web_trf`. You may also use other pipelines mentioned [here](https://spacy.io/usage/models).
     - To use this pipeline on your machine:
         1. Install spaCy: `pip install spaCy`
-        2. Download the pipeline: `python -m spacy download 
+        2. Download the pipeline: `python -m spacy download en_core_web_trf`
 - `ollama==0.2.1`
     - This project runs [Llama 3](https://llama.meta.com) via [Ollama](https://ollama.com). You can browse other supported models [here](https://ollama.com).
     - To download the model to your machine:
         1. Install Ollama: `pip install ollama`
         2. Download Llama 3: `ollama pull llama3`
-en_core_web_trf`
 - `autocorrect==2.6.1`
 - `xlsxwriter==3.2.0`
 - `matplotlib==3.9.0`
